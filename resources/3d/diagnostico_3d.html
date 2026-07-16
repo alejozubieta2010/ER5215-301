@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Diagnóstico visor 3D (eDrawings)</title>
+<style>
+
+    body{
+
+        margin:0;
+
+        font-family:Arial,sans-serif;
+
+        display:flex;
+
+        height:100vh;
+
+    }
+
+    #viewer-frame{
+
+        width:70%;
+
+        height:100%;
+
+        border:none;
+
+        border-right:2px solid #ccc;
+
+    }
+
+    #console-panel{
+
+        width:30%;
+
+        height:100%;
+
+        background:#111;
+
+        color:#0f0;
+
+        font-family:"Consolas",monospace;
+
+        font-size:12px;
+
+        padding:10px;
+
+        overflow-y:auto;
+
+        white-space:pre-wrap;
+
+    }
+
+    #console-panel .warn{ color:#ff0; }
+
+    #console-panel .ok{ color:#0f0; font-weight:bold; }
+
+    #console-panel .error{ color:#f55; }
+
+</style>
+</head>
+<body>
+
+<iframe id="viewer-frame" src="ER5215-301_edrawings.html"></iframe>
+
+<div id="console-panel"></div>
+
+<script>
+
+const panel=document.getElementById("console-panel");
+
+function log(message,type){
+
+    const line=document.createElement("div");
+
+    if(type){ line.className=type; }
+
+    line.textContent=message;
+
+    panel.appendChild(line);
+
+    panel.scrollTop=panel.scrollHeight;
+
+}
+
+log("Cargando el visor 3D en el iframe...");
+
+const iframe=document.getElementById("viewer-frame");
+
+/* ======================================================
+   Estrategia 1: escanear window
+====================================================== */
+
+function scanWindow(win){
+
+    const candidates=[];
+
+    let keys;
+
+    try{
+
+        keys=Object.keys(win);
+
+    }catch(e){
+
+        return candidates;
+
+    }
+
+    keys.forEach(key=>{
+
+        let value;
+
+        try{
+
+            value=win[key];
+
+        }catch(e){
+
+            return;
+
+        }
+
+        if(!value||typeof value!=="object"){
+
+            return;
+
+        }
+
+        if(typeof value.getModel==="function"||value.SelectionMgr){
+
+            candidates.push({path:"window."+key,value:value});
+
+        }
+
+    });
+
+    return candidates;
+
+}
+
+
+
+/* ======================================================
+   Estrategia 2: escanear el registro interno de RequireJS
+   (requirejs.s.contexts._.defined), donde viven todos los
+   módulos ya cargados, incluyendo el que controla el visor.
+====================================================== */
+
+function scanRequireJS(win){
+
+    const candidates=[];
+
+    const req=win.requirejs||win.require;
+
+    if(!req){
+
+        log("   (RequireJS no está expuesto como global — se buscará de otra forma)","warn");
+
+        return candidates;
+
+    }
+
+    try{
+
+        const contexts=req.s.contexts;
+
+        Object.keys(contexts).forEach(contextName=>{
+
+            const defined=contexts[contextName].defined;
+
+            Object.keys(defined).forEach(moduleName=>{
+
+                const moduleExports=defined[moduleName];
+
+                if(!moduleExports||typeof moduleExports!=="object"){
+
+                    return;
+
+                }
+
+                if(typeof moduleExports.getModel==="function"||
+
+                   moduleExports.SelectionMgr||
+
+                   typeof moduleExports.selectByID==="function"){
+
+                    candidates.push({
+
+                        path:"requirejs module: "+moduleName,
+
+                        value:moduleExports
+
+                    });
+
+                }
+
+            });
+
+        });
+
+    }catch(e){
+
+        log("   Error explorando RequireJS: "+e.message,"warn");
+
+    }
+
+    return candidates;
+
+}
+
+
+
+function scanForViewer(win){
+
+    let candidates=scanWindow(win);
+
+    if(candidates.length===0){
+
+        candidates=scanRequireJS(win);
+
+    }
+
+    return candidates;
+
+}
+
+iframe.addEventListener("load",()=>{
+
+    log("✔ Iframe cargado. Esperando a que el modelo 3D termine de cargar...","ok");
+
+    let attempts=0;
+
+    const maxAttempts=30;
+
+    const interval=setInterval(()=>{
+
+        attempts++;
+
+        let win;
+
+        try{
+
+            win=iframe.contentWindow;
+
+        }catch(e){
+
+            log("✖ No se puede acceder al contentWindow (CORS?): "+e.message,"error");
+
+            clearInterval(interval);
+
+            return;
+
+        }
+
+        const candidates=scanForViewer(win);
+
+        if(candidates.length>0){
+
+            clearInterval(interval);
+
+            log("✔ ¡Encontrado! Candidatos a instancia del visor:","ok");
+
+            candidates.forEach(c=>{
+
+                log("   "+c.path,"ok");
+
+                try{
+
+                    log("      Métodos disponibles: "+
+
+                        Object.keys(c.value).filter(k=>typeof c.value[k]==="function").join(", ")
+
+                    );
+
+                }catch(e){}
+
+            });
+
+            window.__foundViewer=candidates[0].value;
+
+            log("");
+
+            log("Puedes seguir explorando en la consola (F12) con:","warn");
+
+            log("   window.__foundViewer","warn");
+
+        }else if(attempts>=maxAttempts){
+
+            clearInterval(interval);
+
+            log("✖ No se encontró la instancia del visor después de "+maxAttempts+" intentos.","error");
+
+            log("Revisa manualmente en la consola del navegador (F12), en el contexto del iframe.","warn");
+
+        }else{
+
+            log("... intento "+attempts+"/"+maxAttempts+" (el modelo aún está cargando)");
+
+        }
+
+    },1000);
+
+});
+
+iframe.addEventListener("error",()=>{
+
+    log("✖ Error al cargar el iframe.","error");
+
+});
+
+</script>
+
+</body>
+</html>

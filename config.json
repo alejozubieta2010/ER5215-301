@@ -1,0 +1,17 @@
+{
+    "engine": {
+        "name": "SDTD Engine",
+        "version": "1.0.0",
+        "author": "Alejandro Zubieta"
+    },
+
+    "workspace": {
+        "projectPath": "",
+        "language": "fr",
+        "theme": "default"
+    },
+
+    "debug": {
+        "enabled": true
+    }
+}

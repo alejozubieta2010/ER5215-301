@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SDTD - Generador de components.json</title>
+
+<script src="xlsx.full.min.js"></script>
+<script src="adapters/svgSourceAdapter.js"></script>
+<script src="adapters/excelAdapter.js"></script>
+<script src="generator.js"></script>
+
+<style>
+
+    :root{
+        --primary:#005A9C;
+        --background:#F5F7FA;
+        --surface:#FFFFFF;
+        --border:#E5E7EB;
+        --text:#222;
+        --text-light:#6B7280;
+        --ok:#1B8A3D;
+        --warn:#B85C00;
+        --error:#C0392B;
+    }
+
+    *{box-sizing:border-box;}
+
+    body{
+        margin:0;
+        font-family:"Segoe UI",Arial,sans-serif;
+        background:var(--background);
+        color:var(--text);
+        padding:40px 20px;
+    }
+
+    .container{
+        max-width:700px;
+        margin:0 auto;
+        background:var(--surface);
+        border:1px solid var(--border);
+        border-radius:10px;
+        padding:32px;
+        box-shadow:0 2px 10px rgba(0,0,0,.06);
+    }
+
+    h1{
+        font-size:22px;
+        color:#243B5A;
+        margin:0 0 6px 0;
+    }
+
+    p.subtitle{
+        color:var(--text-light);
+        margin:0 0 28px 0;
+        font-size:14px;
+    }
+
+    .field{
+        margin-bottom:20px;
+    }
+
+    label{
+        display:block;
+        font-weight:600;
+        font-size:14px;
+        margin-bottom:6px;
+    }
+
+    input[type="file"]{
+        width:100%;
+        padding:10px;
+        border:1px solid var(--border);
+        border-radius:6px;
+        background:#FAFBFC;
+        font-size:13px;
+    }
+
+    button{
+        width:100%;
+        padding:14px;
+        background:var(--primary);
+        color:white;
+        border:none;
+        border-radius:6px;
+        font-size:15px;
+        font-weight:600;
+        cursor:pointer;
+        margin-top:8px;
+    }
+
+    button:hover{
+        opacity:.92;
+    }
+
+    #log{
+        margin-top:24px;
+        background:#F7F9FB;
+        border:1px solid var(--border);
+        border-radius:6px;
+        padding:16px;
+        font-family:"Consolas","Courier New",monospace;
+        font-size:13px;
+        white-space:pre-wrap;
+        max-height:340px;
+        overflow-y:auto;
+        display:none;
+    }
+
+    .log-ok{color:var(--ok);}
+    .log-warn{color:var(--warn);}
+    .log-error{color:var(--error);font-weight:600;}
+
+    #downloadArea{
+        margin-top:16px;
+        display:none;
+    }
+
+    #downloadLink{
+        display:inline-block;
+        background:var(--ok);
+        color:white;
+        text-decoration:none;
+        padding:12px 20px;
+        border-radius:6px;
+        font-weight:600;
+        font-size:14px;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Generador de components.json</h1>
+    <p class="subtitle">
+        Combina el SVG (Composer) y el Excel (BOM del cliente) para
+        armar el archivo <code>components.json</code> de tu proyecto.
+        Todo se procesa en tu navegador — ningún archivo se sube a internet.
+    </p>
+
+    <div class="field">
+        <label for="svgInput">1. Archivo SVG (exportado de Composer)</label>
+        <input type="file" id="svgInput" accept=".svg">
+    </div>
+
+    <div class="field">
+        <label for="excelInput">2. Archivo Excel (BOM del cliente)</label>
+        <input type="file" id="excelInput" accept=".xlsx,.xls">
+    </div>
+
+    <button id="generateButton">Generar components.json</button>
+
+    <div id="log"></div>
+
+    <div id="downloadArea">
+        <a id="downloadLink" download="components.json">⬇ Descargar components.json</a>
+    </div>
+
+</div>
+
+</body>
+</html>

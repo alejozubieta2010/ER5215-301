@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Smart Digital Technical Documentation">
+
+    <title>SDTD Workspace</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<div id="sdtd-workspace">
+
+    <!-- ===================================================== -->
+    <!-- MAIN -->
+    <!-- ===================================================== -->
+
+    <main id="workspace-main">
+
+        <!-- ============================================== -->
+        <!-- LEFT SIDE -->
+        <!-- ============================================== -->
+
+        <section id="workspace-area">
+
+            <!-- ========================================== -->
+            <!-- PROJECT HEADER -->
+            <!-- ========================================== -->
+
+            <header id="workspace-header">
+
+                <h1 id="project-title">
+
+                    Loading...
+
+                </h1>
+
+                <div id="project-meta">
+
+                    <span id="project-code">
+
+                        ---
+
+                    </span>
+
+                </div>
+
+            </header>
+
+            <!-- ========================================== -->
+            <!-- SVG / 3D / PDF -->
+            <!-- ========================================== -->
+
+            <section id="workspace-view">
+
+                <div id="viewer-container">
+
+                    <!--
+
+                        SVG Viewer
+
+                        3D Viewer
+
+                        PDF Viewer
+
+                    -->
+
+                </div>
+
+            </section>
+
+            <!-- ========================================== -->
+            <!-- BOM -->
+            <!-- ========================================== -->
+
+            <section id="bom-container">
+
+                <div id="bom-header">
+
+                    <span>
+
+                        ▼ Bill of Materials
+
+                    </span>
+
+                </div>
+
+                <div id="bom-content">
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <!-- ============================================== -->
+        <!-- RIGHT PANEL -->
+        <!-- ============================================== -->
+
+        <aside id="workspace-panel">
+
+            <!-- ========================================== -->
+            <!-- CLIENT -->
+            <!-- ========================================== -->
+
+            <section
+                class="panel-section"
+                id="client-section">
+
+                <img
+                    id="client-logo"
+                    src="images/logo.png"
+                    alt="Client Logo">
+
+                <h2 id="client-name">
+
+                    Loading...
+
+                </h2>
+
+            </section>
+
+            <!-- ========================================== -->
+            <!-- COMPONENT -->
+            <!-- ========================================== -->
+
+            <section
+                class="panel-section"
+                id="component-section">
+
+                <h2>
+
+                    Component
+
+                </h2>
+
+                <div id="component-content">
+
+                    No component selected
+
+                </div>
+
+            </section>
+
+            <!-- ========================================== -->
+            <!-- INFORMATION -->
+            <!-- ========================================== -->
+
+            <section
+                class="panel-section"
+                id="information-section">
+
+                <h2>
+
+                    Information
+
+                </h2>
+
+                <div id="information-content">
+
+                </div>
+
+            </section>
+
+            <!-- ========================================== -->
+            <!-- DOCUMENTS -->
+            <!-- ========================================== -->
+
+            <section
+                class="panel-section"
+                id="documents-section">
+
+                <h2>
+
+                    Documents
+
+                </h2>
+
+                <div id="documents-content">
+
+                </div>
+
+            </section>
+
+            <!-- ========================================== -->
+            <!-- ACTIONS -->
+            <!-- ========================================== -->
+
+            <section
+                class="panel-section"
+                id="actions-section">
+
+                <h2>
+
+                    Actions
+
+                </h2>
+
+                <div id="actions-content">
+
+                </div>
+
+            </section>
+
+        </aside>
+
+    </main>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CORE -->
+<!-- ===================================================== -->
+
+<script src="js/core/engine.js"></script>
+
+<script src="js/core/dataManager.js"></script>
+
+<script src="js/core/componentManager.js"></script>
+
+<script src="js/core/selectionState.js"></script>
+
+<!-- ===================================================== -->
+<!-- MODULES -->
+<!-- ===================================================== -->
+
+<script src="js/modules/svg/svgInspector.js"></script>
+
+<script src="js/modules/svg/composerAdapter.js"></script>
+
+<script src="js/modules/svg/composerEvents.js"></script>
+
+<script src="js/modules/svg/composerLookup.js"></script>
+
+<script src="js/modules/svg/svg.js"></script>
+
+<script src="js/modules/model3d/model3d.js"></script>
+
+<script src="js/modules/documents/documents.js"></script>
+
+<!-- ===================================================== -->
+<!-- MODULE MANAGER -->
+<!-- ===================================================== -->
+
+<script src="js/core/moduleManager.js"></script>
+
+<!-- ===================================================== -->
+<!-- SERVICES -->
+<!-- ===================================================== -->
+
+<script src="js/service/navigationService.js"></script>
+
+<script src="js/service/highlightService.js"></script>
+
+<script src="js/service/synchronizationService.js"></script>
+
+<script src="js/service/historyService.js"></script>
+
+<script src="js/service/documentService.js"></script>
+
+<!-- ===================================================== -->
+<!-- UI -->
+<!-- ===================================================== -->
+
+<script src="js/ui/ui.js"></script>
+
+<script src="js/ui/workspace.js"></script>
+
+<script src="js/ui/selectionManager.js"></script>
+
+<script src="js/ui/panel.js"></script>
+
+<script src="js/ui/bom.js"></script>
+
+<!-- ===================================================== -->
+<!-- APP -->
+<!-- ===================================================== -->
+
+<script src="js/core/app.js"></script>
+
+</body>
+
+</html>

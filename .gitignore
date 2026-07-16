@@ -1,0 +1,17 @@
+# Dependencias
+node_modules/
+
+# Sistema
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editores
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Graphify (generado, re-buildable)
+graphify-out/

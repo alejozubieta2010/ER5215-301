@@ -1,0 +1,48 @@
+{
+    "project": {
+
+        "title":"ENTRAÎNEMENT ÉLÉVATEUR JUMBO 30HP TA5 68 RPM CL.2",
+
+        "code":"ER5215-301",
+
+        "status":"Engineering Release",
+
+        "revision":"A",
+
+        "version":"1.0"
+
+    },
+
+    "modules":{
+
+        "svg":true,
+
+        "documents":true,
+
+        "model3d":false
+
+    },
+
+    "resources":{
+
+        "svg":"resources/svg/ER5215-301.svg",
+
+        "model3d":"resources/3d/ER5215-301.html",
+
+        "thumbnail":"resources/images/thumbnail.png",
+
+        "preview":"resources/images/preview.jpg",
+
+        "pdf":"resources/pdf/ER5215-301.pdf"
+
+    },
+
+    "settings":{
+
+        "language":"fr",
+
+        "theme":"default"
+
+    }
+
+}
