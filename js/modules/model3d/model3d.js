@@ -1,4 +1,4 @@
-const Model3DModule = {
+export const Model3DModule = {
 
     initialize() {
 

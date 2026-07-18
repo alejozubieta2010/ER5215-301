@@ -9,7 +9,9 @@
 
 ========================================================== */
 
-const ComponentManager = {
+import { SDTD } from './app.js';
+
+export const ComponentManager = {
 
     /* ======================================================
        PROPERTIES

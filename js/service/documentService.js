@@ -9,7 +9,10 @@
 
 ========================================================== */
 
-const DocumentService = {
+import { SDTD } from '../core/app.js';
+import { DataManager } from '../core/dataManager.js';
+
+export const DocumentService = {
 
     /* ======================================================
        INITIALIZE

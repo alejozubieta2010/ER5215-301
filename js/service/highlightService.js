@@ -9,7 +9,10 @@
 
 ========================================================== */
 
-const HighlightService = {
+import { ComposerAdapter } from '../modules/svg/composerAdapter.js';
+import { BOM } from '../ui/bom.js';
+
+export const HighlightService = {
 
     /* ======================================================
        SETTINGS

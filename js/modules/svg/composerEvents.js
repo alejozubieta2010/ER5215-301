@@ -9,7 +9,12 @@
 
 ========================================================== */
 
-const ComposerEvents={
+import { SelectionState } from '../../core/selectionState.js';
+import { HighlightService } from '../../service/highlightService.js';
+import { SelectionManager } from '../../ui/selectionManager.js';
+import { SVGInspector } from './svgInspector.js';
+
+export const ComposerEvents={
 
     /* ======================================================
        REGISTER EVENTS

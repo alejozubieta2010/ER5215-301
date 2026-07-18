@@ -9,7 +9,10 @@
 
 ========================================================== */
 
-const ComposerAdapter={
+import { ComposerLookup } from './composerLookup.js';
+import { SelectionManager } from '../../ui/selectionManager.js';
+
+export const ComposerAdapter={
 
     svgDocument:null,
 

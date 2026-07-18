@@ -9,7 +9,13 @@
 
 ========================================================== */
 
-const SelectionManager = {
+import { ComponentManager } from '../core/componentManager.js';
+import { NavigationService } from '../service/navigationService.js';
+import { HighlightService } from '../service/highlightService.js';
+import { SynchronizationService } from '../service/synchronizationService.js';
+import { HistoryService } from '../service/historyService.js';
+
+export const SelectionManager = {
 
     /* ======================================================
        PROPERTIES

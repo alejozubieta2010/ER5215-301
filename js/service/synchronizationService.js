@@ -9,7 +9,7 @@
 
 ========================================================== */
 
-const SynchronizationService = {
+export const SynchronizationService = {
 
     /* ======================================================
        PROPERTIES

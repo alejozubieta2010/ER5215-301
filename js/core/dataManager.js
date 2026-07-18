@@ -9,7 +9,9 @@
 
 ========================================================== */
 
-const DataManager = {
+import { SDTD } from './app.js';
+
+export const DataManager = {
 
     /* ======================================================
        INITIALIZE

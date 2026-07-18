@@ -9,7 +9,13 @@
 
 ========================================================== */
 
-const BOM = {
+import { SDTD } from '../core/app.js';
+import { ComponentManager } from '../core/componentManager.js';
+import { SelectionManager } from './selectionManager.js';
+import { HighlightService } from '../service/highlightService.js';
+import { Panel } from './panel.js';
+
+export const BOM = {
 
     /* ======================================================
        ELEMENTS

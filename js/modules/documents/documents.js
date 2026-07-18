@@ -1,4 +1,4 @@
-const DocumentsModule = {
+export const DocumentsModule = {
 
     initialize() {
 

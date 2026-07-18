@@ -10,7 +10,10 @@
 
 ========================================================== */
 
-const ComposerLookup={
+import { ComposerEvents } from './composerEvents.js';
+import { HighlightService } from '../../service/highlightService.js';
+
+export const ComposerLookup={
 
     svgDocument:null,
 

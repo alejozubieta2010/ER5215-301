@@ -9,7 +9,12 @@
 
 ========================================================== */
 
-const NavigationService = {
+import { ComponentManager } from '../core/componentManager.js';
+import { Panel } from '../ui/panel.js';
+import { BOM } from '../ui/bom.js';
+import { ComposerAdapter } from '../modules/svg/composerAdapter.js';
+
+export const NavigationService = {
 
     /* ======================================================
        NAVIGATE

@@ -9,7 +9,11 @@
 
 ========================================================== */
 
-const Panel = {
+import { SDTD } from '../core/app.js';
+import { DataManager } from '../core/dataManager.js';
+import { BOM } from './bom.js';
+
+export const Panel = {
 
     componentContainer: null,
 
@@ -18,6 +22,12 @@ const Panel = {
     documentsContainer: null,
 
     actionsContainer: null,
+
+    modalOverlay: null,
+
+    modalForm: null,
+
+    modalStatus: null,
 
 
 
@@ -40,6 +50,8 @@ const Panel = {
         this.showEmptyState();
 
         this.renderActions();
+
+        this.initModal();
 
     },
 
@@ -343,58 +355,229 @@ const Panel = {
 
 
     /* ======================================================
-       SEND WHOLE PROJECT QUOTE REQUEST
-       (botón directo, sin necesidad de marcar checkboxes)
+       ACTIONS — Quote Modal
     ====================================================== */
 
-    sendWholeProjectQuoteRequest() {
+    initModal() {
 
-        const projectName =
+        this.modalOverlay =
+            document.getElementById("quote-modal-overlay");
 
-            (SDTD.project && SDTD.project.project && SDTD.project.project.title)
+        this.modalForm =
+            document.getElementById("quote-modal-form");
 
-                ? SDTD.project.project.title
+        this.modalStatus =
+            document.getElementById("quote-modal-status");
 
-                : "";
+        const closeBtn =
+            document.getElementById("quote-modal-close");
+
+        if (closeBtn) {
+
+            closeBtn.addEventListener(
+                "click",
+                () => this.closeQuoteModal()
+            );
+
+        }
+
+        if (this.modalOverlay) {
+
+            this.modalOverlay.addEventListener(
+                "click",
+                (e) => {
+                    if (e.target === this.modalOverlay) {
+                        this.closeQuoteModal();
+                    }
+                }
+            );
+
+        }
+
+        if (this.modalForm) {
+
+            this.modalForm.addEventListener(
+                "submit",
+                (e) => this.handleQuoteSubmit(e)
+            );
+
+        }
+
+        document.addEventListener("keydown", (e) => {
+
+            if (
+                e.key === "Escape" &&
+                this.modalOverlay &&
+                this.modalOverlay.style.display !== "none"
+            ) {
+
+                e.stopPropagation();
+
+                this.closeQuoteModal();
+
+            }
+
+        });
+
+    },
+
+
+
+    openQuoteModal(items, isWholeProject) {
+
+        if (!this.modalOverlay) {
+
+            return;
+
+        }
 
         const projectCode =
-
             (SDTD.project && SDTD.project.project && SDTD.project.project.code)
-
                 ? SDTD.project.project.code
-
                 : "";
 
-        const subject =
+        const projectTitle =
+            (SDTD.project && SDTD.project.project && SDTD.project.project.title)
+                ? SDTD.project.project.title
+                : "";
 
-            `Demande de devis - Ensemble complet ${projectCode}`;
+        document.getElementById("quote-modal-project").textContent =
+            projectCode + " — " + projectTitle;
 
-        const body =
+        const itemsContainer =
+            document.getElementById("quote-modal-items");
 
-            `Bonjour,\n\n` +
-            `Je souhaite obtenir un devis pour l'ensemble complet ` +
-            `${projectCode} - ${projectName}.\n\n` +
-            `Merci.`;
+        if (isWholeProject) {
 
-        this.openMailto(subject, body);
+            itemsContainer.innerHTML =
+                "<p>Ensemble complet du projet</p>";
+
+        } else {
+
+            const list = items.map(item =>
+                `<li>${item.id} | ${item.description || item.name || ""} | Qté: ${item.quantity}</li>`
+            ).join("");
+
+            itemsContainer.innerHTML =
+                `<ul>${list}</ul>`;
+
+        }
+
+        const subject = isWholeProject
+            ? `Demande de devis - Ensemble complet ${projectCode}`
+            : `Demande de devis - ${projectTitle}`;
+
+        const details = isWholeProject
+            ? `Bonjour,\n\nJe souhaite obtenir un devis pour l'ensemble complet ${projectCode} - ${projectTitle}.\n\nMerci.`
+            : `Bonjour,\n\nJe souhaite obtenir un devis pour les pièces suivantes (${projectTitle}) :\n\n${items.map(item => `- ${item.id} | ${item.description || item.name || ""} | Qté: ${item.quantity}`).join("\n")}\n\nMerci.`;
+
+        document.getElementById("quote-hidden-subject").value = subject;
+        document.getElementById("quote-hidden-details").value = details;
+
+        this.modalForm.reset();
+
+        document.getElementById("quote-hidden-subject").value = subject;
+        document.getElementById("quote-hidden-details").value = details;
+
+        this.modalStatus.textContent = "";
+        this.modalStatus.className = "panel-hint";
+
+        this.modalOverlay.style.display = "flex";
+
+    },
+
+
+
+    closeQuoteModal() {
+
+        if (this.modalOverlay) {
+
+            this.modalOverlay.style.display = "none";
+
+        }
+
+    },
+
+
+
+    handleQuoteSubmit(e) {
+
+        e.preventDefault();
+
+        const submitBtn =
+            document.getElementById("quote-modal-submit");
+
+        submitBtn.disabled = true;
+
+        this.modalStatus.textContent = "Envoi en cours...";
+
+        this.modalStatus.className = "panel-hint";
+
+        fetch("https://formspree.io/f/mdaqgkya", {
+
+            method: "POST",
+
+            headers: { "Accept": "application/json" },
+
+            body: new FormData(this.modalForm)
+
+        })
+
+        .then(response => {
+
+            if (response.ok) {
+
+                this.modalStatus.textContent =
+                    "✔ Demande envoyée avec succès";
+
+                this.modalStatus.className = "panel-hint success";
+
+                setTimeout(() => this.closeQuoteModal(), 2000);
+
+            } else {
+
+                throw new Error();
+
+            }
+
+        })
+
+        .catch(() => {
+
+            this.modalStatus.textContent =
+                "✖ Erreur d'envoi. Veuillez réessayer ou nous contacter directement.";
+
+            this.modalStatus.className = "panel-hint error";
+
+            submitBtn.disabled = false;
+
+        });
 
     },
 
 
 
     /* ======================================================
-       SEND QUOTE REQUEST
-       (piezas marcadas con checkbox en el BOM)
+       SEND WHOLE PROJECT QUOTE REQUEST
+    ====================================================== */
+
+    sendWholeProjectQuoteRequest() {
+
+        this.openQuoteModal([], true);
+
+    },
+
+
+
+    /* ======================================================
+       SEND QUOTE REQUEST (itemized from BOM checkboxes)
     ====================================================== */
 
     sendQuoteRequest() {
 
         const items =
-
             (typeof BOM !== "undefined")
-
                 ? BOM.getQuoteSelection()
-
                 : [];
 
         if (items.length === 0) {
@@ -403,74 +586,18 @@ const Panel = {
 
         }
 
-        const projectName =
-
-            (SDTD.project && SDTD.project.project && SDTD.project.project.title)
-
-                ? SDTD.project.project.title
-
-                : "";
-
         const totalComponents =
-
             (SDTD.components) ? SDTD.components.length : 0;
-
-        //--------------------------------------------------
-        // Si están TODAS las piezas marcadas, se entiende
-        // como una solicitud del conjunto completo.
-        //--------------------------------------------------
 
         if (totalComponents > 0 && items.length === totalComponents) {
 
-            this.sendWholeProjectQuoteRequest();
+            this.openQuoteModal([], true);
 
             return;
 
         }
 
-        const subject =
-
-            `Demande de devis - ${projectName}`;
-
-        const lines =
-
-            items.map(item =>
-
-                `- ${item.id} | ${item.description || item.name} | Qté: ${item.quantity}`
-
-            );
-
-        const body =
-
-            `Bonjour,\n\n` +
-            `Je souhaite obtenir un devis pour les pièces suivantes ` +
-            `(${projectName}) :\n\n` +
-            lines.join("\n") +
-            `\n\nMerci.`;
-
-        this.openMailto(subject, body);
-
-    },
-
-
-
-    openMailto(subject, body) {
-
-        const salesEmail =
-
-            (SDTD.client && SDTD.client.salesEmail)
-
-                ? SDTD.client.salesEmail
-
-                : "";
-
-        const mailtoUrl =
-
-            `mailto:${salesEmail}` +
-            `?subject=${encodeURIComponent(subject)}` +
-            `&body=${encodeURIComponent(body)}`;
-
-        window.location.href = mailtoUrl;
+        this.openQuoteModal(items, false);
 
     }
 

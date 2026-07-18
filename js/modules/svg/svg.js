@@ -8,7 +8,10 @@
 
 ========================================================== */
 
-const SVGModule = {
+import { SDTD } from '../../core/app.js';
+import { ComposerAdapter } from './composerAdapter.js';
+
+export const SVGModule = {
 
     /* ======================================================
        PROPERTIES

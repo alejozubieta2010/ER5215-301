@@ -12,7 +12,12 @@
 
 ========================================================== */
 
-const Workspace = {
+import { SDTD } from '../core/app.js';
+import { SVGModule } from '../modules/svg/svg.js';
+import { Model3DModule } from '../modules/model3d/model3d.js';
+import { DocumentsModule } from '../modules/documents/documents.js';
+
+export const Workspace = {
 
     /* ======================================================
        PROPERTIES

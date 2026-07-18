@@ -7,7 +7,18 @@
 
 ========================================================== */
 
-const Engine = {
+import { SDTD } from './app.js';
+import { DataManager } from './dataManager.js';
+import { ComponentManager } from './componentManager.js';
+import { SelectionState } from './selectionState.js';
+import { ModuleManager } from './moduleManager.js';
+import { UI } from '../ui/ui.js';
+import { Workspace } from '../ui/workspace.js';
+import { SelectionManager } from '../ui/selectionManager.js';
+import { Panel } from '../ui/panel.js';
+import { BOM } from '../ui/bom.js';
+
+export const Engine = {
 
     /* ======================================================
        INITIALIZE
