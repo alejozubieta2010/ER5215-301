@@ -1,245 +1,90 @@
 /* ==========================================================
    SDTD UI
-
    Selection Manager
-
-   Central component selection manager.
-
-   Version : 3.1.0
-
+   Version : 4.0.0
+   Fase 2: convertido a pub/sub vía EventBus. Ya no llama
+   directo a NavigationService, HighlightService,
+   SynchronizationService ni HistoryService — emite
+   "selection:changed" / "selection:cleared" y cada uno
+   se suscribe por su cuenta en su propio initialize().
 ========================================================== */
 
 import { ComponentManager } from '../core/componentManager.js';
-import { NavigationService } from '../service/navigationService.js';
-import { HighlightService } from '../service/highlightService.js';
-import { SynchronizationService } from '../service/synchronizationService.js';
-import { HistoryService } from '../service/historyService.js';
+import { EventBus } from '../core/eventBus.js';
 
 export const SelectionManager = {
 
-    /* ======================================================
-       PROPERTIES
-    ====================================================== */
-
     selectedComponent: null,
-
     _escBound: false,
-
     _escHandler: null,
 
-
-
-    /* ======================================================
-       INITIALIZE
-    ====================================================== */
-
     initialize() {
-
         this.bindEscKey();
-
-        console.log(
-
-            "✔ Selection Manager Initialized"
-
-        );
-
+        this.bindEvents();
+        console.log("✔ Selection Manager Initialized");
     },
 
+    bindEvents() {
 
+        EventBus.on("selection:requested", (data) => {
+            this.select(data && data.componentId);
+        });
 
-    /* ======================================================
-       BIND ESC KEY
-       Escucha ESC globalmente para limpiar la selección.
-       Protegido contra doble binding: si initialize() se
-       llama más de una vez (por ejemplo al recargar módulos
-       o al alternar 2D/3D en el futuro), el listener anterior
-       se remueve antes de agregar uno nuevo.
-    ====================================================== */
+        EventBus.on("selection:clear-requested", () => {
+            this.clear();
+        });
+
+    },
 
     bindEscKey() {
 
         if (this._escBound && this._escHandler) {
-
-            document.removeEventListener(
-
-                "keydown",
-
-                this._escHandler
-
-            );
-
+            document.removeEventListener("keydown", this._escHandler);
             this._escBound = false;
-
         }
 
         this._escHandler = (event) => {
-
-            if (event.key !== "Escape") {
-
-                return;
-
-            }
-
-            if (!this.hasSelection()) {
-
-                return;
-
-            }
-
+            if (event.key !== "Escape") return;
+            if (!this.hasSelection()) return;
             this.clear();
-
         };
 
-        document.addEventListener(
-
-            "keydown",
-
-            this._escHandler
-
-        );
-
+        document.addEventListener("keydown", this._escHandler);
         this._escBound = true;
 
     },
 
-
-
-    /* ======================================================
-       SELECT
-    ====================================================== */
-
     select(componentID) {
 
-        if (!componentID) {
+        if (!componentID) return;
 
+        if (!ComponentManager.exists(componentID)) {
+            console.warn("Selection Manager:", "Unknown component", componentID);
             return;
-
         }
-
-        //--------------------------------------------------
-        // Component exists?
-        //--------------------------------------------------
-
-        if (
-
-            !ComponentManager.exists(componentID)
-
-        ) {
-
-            console.warn(
-
-                "Selection Manager:",
-
-                "Unknown component",
-
-                componentID
-
-            );
-
-            return;
-
-        }
-
-        //--------------------------------------------------
-        // Save Selection
-        //--------------------------------------------------
 
         this.selectedComponent = componentID;
 
-        //--------------------------------------------------
-        // Console
-        //--------------------------------------------------
-
         console.log("------------------------------------");
-
         console.log("Selected Component:");
-
         console.log(componentID);
-
         console.log("------------------------------------");
 
-        //--------------------------------------------------
-        // Navigation
-        //--------------------------------------------------
-
-        NavigationService.navigate(
-
-            componentID
-
-        );
-
-        //--------------------------------------------------
-        // Highlight
-        //--------------------------------------------------
-
-        HighlightService.highlight(
-
-            componentID
-
-        );
-
-        //--------------------------------------------------
-        // Synchronization
-        //--------------------------------------------------
-
-        SynchronizationService.synchronize(
-
-            componentID
-
-        );
-
-        //--------------------------------------------------
-        // History
-        //--------------------------------------------------
-
-        HistoryService.add(
-
-            componentID
-
-        );
+        EventBus.emit("selection:changed", { componentId: componentID });
 
     },
-
-
-
-    /* ======================================================
-       CLEAR
-    ====================================================== */
 
     clear() {
-
         this.selectedComponent = null;
-
-        HighlightService.clear();
-
-        NavigationService.clear();
-
-        HistoryService.clear();
-
+        EventBus.emit("selection:cleared");
     },
-
-
-
-    /* ======================================================
-       CURRENT
-    ====================================================== */
 
     current() {
-
         return this.selectedComponent;
-
     },
 
-
-
-    /* ======================================================
-       HAS SELECTION
-    ====================================================== */
-
     hasSelection() {
-
         return this.selectedComponent !== null;
-
     }
 
 };

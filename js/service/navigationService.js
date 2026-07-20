@@ -1,14 +1,11 @@
 /* ==========================================================
    SDTD SERVICES
-
    Navigation Service
-
-   Synchronizes every visual module.
-
-   Version : 1.0.0
-
+   Version : 2.0.0 — Fase 2: ahora se suscribe a EventBus
+   vía su propio initialize(), ya no lo llama SelectionManager.
 ========================================================== */
 
+import { EventBus } from '../core/eventBus.js';
 import { ComponentManager } from '../core/componentManager.js';
 import { Panel } from '../ui/panel.js';
 import { BOM } from '../ui/bom.js';
@@ -16,106 +13,37 @@ import { ComposerAdapter } from '../modules/svg/composerAdapter.js';
 
 export const NavigationService = {
 
-    /* ======================================================
-       NAVIGATE
-    ====================================================== */
-
-    navigate(componentID) {
-
-        if (!componentID) {
-
-            return;
-
-        }
-
-        //--------------------------------------------------
-        // Verify component exists
-        //--------------------------------------------------
-
-        if (!ComponentManager.exists(componentID)) {
-
-            console.warn(
-
-                "Navigation Service:",
-
-                "Unknown component",
-
-                componentID
-
-            );
-
-            return;
-
-        }
-
-        //--------------------------------------------------
-        // Update Panel
-        //--------------------------------------------------
-
-        Panel.update(
-
-            componentID
-
-        );
-
-        //--------------------------------------------------
-        // Update BOM
-        //--------------------------------------------------
-
-        BOM.highlight(
-
-            componentID
-
-        );
-
-        //--------------------------------------------------
-        // Update Composer
-        //--------------------------------------------------
-
-        ComposerAdapter.highlightComponent(
-
-            componentID
-
-        );
-
-        //--------------------------------------------------
-        // Future Modules
-        //--------------------------------------------------
-
-        /*
-            PDFViewer.navigate(componentID);
-
-            Model3D.focus(componentID);
-
-            Documents.update(componentID);
-
-            History.add(componentID);
-        */
-
+    initialize() {
+        this.bindEvents();
+        console.log("✔ Navigation Service Ready");
     },
 
+    bindEvents() {
+        EventBus.on("selection:changed", (data) => {
+            this.navigate(data && data.componentId);
+        });
+        EventBus.on("selection:cleared", () => {
+            this.clear();
+        });
+    },
 
+    navigate(componentID) {
+        if (!componentID) return;
 
-    /* ======================================================
-       CLEAR
-    ====================================================== */
+        if (!ComponentManager.exists(componentID)) {
+            console.warn("Navigation Service:", "Unknown component", componentID);
+            return;
+        }
+
+        Panel.update(componentID);
+        BOM.highlight(componentID);
+        ComposerAdapter.highlightComponent(componentID);
+    },
 
     clear() {
-
         Panel.showEmptyState();
-
-        if (BOM.clearSelection) {
-
-            BOM.clearSelection();
-
-        }
-
-        if (ComposerAdapter.clearHighlight) {
-
-            ComposerAdapter.clearHighlight();
-
-        }
-
+        if (BOM.clearSelection) BOM.clearSelection();
+        if (ComposerAdapter.clearHighlight) ComposerAdapter.clearHighlight();
     }
 
 };

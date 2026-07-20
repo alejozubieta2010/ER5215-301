@@ -1,340 +1,93 @@
 /* ==========================================================
    SDTD SERVICES
-
    History Service
-
-   Navigation history for SDTD.
-
-   Version : 1.0.0
-
+   Version : 2.0.0 — Fase 2: se suscribe a EventBus en vez
+   de que SelectionManager lo llame directo.
 ========================================================== */
+
+import { EventBus } from '../core/eventBus.js';
 
 export const HistoryService = {
 
-    /* ======================================================
-       PROPERTIES
-    ====================================================== */
-
     history: [],
-
     currentIndex: -1,
-
     maxItems: 100,
 
-
-
-    /* ======================================================
-       INITIALIZE
-    ====================================================== */
-
     initialize() {
-
-        console.log(
-
-            "✔ History Service Ready"
-
-        );
-
+        this.bindEvents();
+        console.log("✔ History Service Ready");
     },
 
-
-
-    /* ======================================================
-       ADD
-    ====================================================== */
+    bindEvents() {
+        EventBus.on("selection:changed", (data) => {
+            this.add(data && data.componentId);
+        });
+        EventBus.on("selection:cleared", () => {
+            this.clear();
+        });
+    },
 
     add(componentID) {
+        if (!componentID) return;
+        if (this.current() === componentID) return;
 
-        if (!componentID) {
-
-            return;
-
+        if (this.currentIndex < this.history.length - 1) {
+            this.history = this.history.slice(0, this.currentIndex + 1);
         }
 
-        //--------------------------------------------------
-        // Ignore duplicated consecutive selections
-        //--------------------------------------------------
+        this.history.push(componentID);
 
-        if (
+        if (this.history.length > this.maxItems) this.history.shift();
 
-            this.current() === componentID
-
-        ) {
-
-            return;
-
-        }
-
-        //--------------------------------------------------
-        // Remove future history
-        //--------------------------------------------------
-
-        if (
-
-            this.currentIndex < this.history.length - 1
-
-        ) {
-
-            this.history = this.history.slice(
-
-                0,
-
-                this.currentIndex + 1
-
-            );
-
-        }
-
-        //--------------------------------------------------
-        // Add component
-        //--------------------------------------------------
-
-        this.history.push(
-
-            componentID
-
-        );
-
-        //--------------------------------------------------
-        // Limit size
-        //--------------------------------------------------
-
-        if (
-
-            this.history.length > this.maxItems
-
-        ) {
-
-            this.history.shift();
-
-        }
-
-        //--------------------------------------------------
-        // Update index
-        //--------------------------------------------------
-
-        this.currentIndex =
-
-            this.history.length - 1;
-
+        this.currentIndex = this.history.length - 1;
     },
-
-
-
-    /* ======================================================
-       BACK
-    ====================================================== */
 
     back() {
-
-        if (
-
-            this.currentIndex <= 0
-
-        ) {
-
-            return null;
-
-        }
-
+        if (this.currentIndex <= 0) return null;
         this.currentIndex--;
-
-        return this.history[
-
-            this.currentIndex
-
-        ];
-
+        return this.history[this.currentIndex];
     },
-
-
-
-    /* ======================================================
-       FORWARD
-    ====================================================== */
 
     forward() {
-
-        if (
-
-            this.currentIndex >=
-
-            this.history.length - 1
-
-        ) {
-
-            return null;
-
-        }
-
+        if (this.currentIndex >= this.history.length - 1) return null;
         this.currentIndex++;
-
-        return this.history[
-
-            this.currentIndex
-
-        ];
-
+        return this.history[this.currentIndex];
     },
-
-
-
-    /* ======================================================
-       CURRENT
-    ====================================================== */
 
     current() {
-
-        if (
-
-            this.currentIndex < 0
-
-        ) {
-
-            return null;
-
-        }
-
-        return this.history[
-
-            this.currentIndex
-
-        ];
-
+        if (this.currentIndex < 0) return null;
+        return this.history[this.currentIndex];
     },
-
-
-
-    /* ======================================================
-       PREVIOUS
-    ====================================================== */
 
     previous() {
-
-        if (
-
-            this.currentIndex <= 0
-
-        ) {
-
-            return null;
-
-        }
-
-        return this.history[
-
-            this.currentIndex - 1
-
-        ];
-
+        if (this.currentIndex <= 0) return null;
+        return this.history[this.currentIndex - 1];
     },
-
-
-
-    /* ======================================================
-       NEXT
-    ====================================================== */
 
     next() {
-
-        if (
-
-            this.currentIndex >=
-
-            this.history.length - 1
-
-        ) {
-
-            return null;
-
-        }
-
-        return this.history[
-
-            this.currentIndex + 1
-
-        ];
-
+        if (this.currentIndex >= this.history.length - 1) return null;
+        return this.history[this.currentIndex + 1];
     },
-
-
-
-    /* ======================================================
-       CLEAR
-    ====================================================== */
 
     clear() {
-
         this.history = [];
-
         this.currentIndex = -1;
-
     },
-
-
-
-    /* ======================================================
-       COUNT
-    ====================================================== */
 
     count() {
-
         return this.history.length;
-
     },
-
-
-
-    /* ======================================================
-       GET HISTORY
-    ====================================================== */
 
     getHistory() {
-
-        return [
-
-            ...this.history
-
-        ];
-
+        return [...this.history];
     },
 
-
-
-    /* ======================================================
-       REPORT
-    ====================================================== */
-
     report() {
-
-        console.groupCollapsed(
-
-            "History"
-
-        );
-
-        console.table(
-
-            this.history.map(
-
-                (component, index) => ({
-
-                    index,
-
-                    component,
-
-                    current:
-
-                        index === this.currentIndex
-
-                })
-
-            )
-
-        );
-
+        console.groupCollapsed("History");
+        console.table(this.history.map((component, index) => ({
+            index, component, current: index === this.currentIndex
+        })));
         console.groupEnd();
-
     }
 
 };

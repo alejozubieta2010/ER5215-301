@@ -1,220 +1,67 @@
 /* ==========================================================
    SDTD ENGINE
-
    Composer Events
-
-   Version : 1.0.0
-
-   Handles Composer SVG Events
-
+   Version : 2.0.0 — Fase 2: emite "selection:requested" en
+   vez de llamar a SelectionManager.select() directo.
 ========================================================== */
 
 import { SelectionState } from '../../core/selectionState.js';
 import { HighlightService } from '../../service/highlightService.js';
-import { SelectionManager } from '../../ui/selectionManager.js';
+import { EventBus } from '../../core/eventBus.js';
 import { SVGInspector } from './svgInspector.js';
 
-export const ComposerEvents={
+export const ComposerEvents = {
 
-    /* ======================================================
-       REGISTER EVENTS
-    ====================================================== */
+    register(hotspot) {
+        if (!hotspot) return;
 
-    register(hotspot){
-
-        if(!hotspot){
-
-            return;
-
-        }
-
-        hotspot.addEventListener(
-
-            "mouseenter",
-
-            event=>{
-
-                this.hotspotEnter(event);
-
-            }
-
-        );
-
-        hotspot.addEventListener(
-
-            "mouseleave",
-
-            event=>{
-
-                this.hotspotLeave(event);
-
-            }
-
-        );
-
-        hotspot.addEventListener(
-
-            "click",
-
-            event=>{
-
-                this.hotspotClick(event);
-
-            }
-
-        );
-
+        hotspot.addEventListener("mouseenter", event => this.hotspotEnter(event));
+        hotspot.addEventListener("mouseleave", event => this.hotspotLeave(event));
+        hotspot.addEventListener("click", event => this.hotspotClick(event));
     },
 
+    hotspotEnter(event) {
+        const hotspot = event.currentTarget;
+        const componentCode = hotspot.dataset.component;
+        if (!componentCode) return;
 
-
-    /* ======================================================
-       HOTSPOT ENTER
-    ====================================================== */
-
-    hotspotEnter(event){
-
-        const hotspot=
-
-            event.currentTarget;
-
-        const componentCode=
-
-            hotspot.dataset.component;
-
-        if(!componentCode){
-
-            return;
-
-        }
-
-        //--------------------------------------------------
-        // Update State (solo referencia interna, no ilumina)
-        //--------------------------------------------------
-
-        SelectionState.hover(
-
-            componentCode
-
-        );
-
+        SelectionState.hover(componentCode);
     },
 
-
-
-    /* ======================================================
-       HOTSPOT LEAVE
-    ====================================================== */
-
-    hotspotLeave(event){
-
-        const hotspot=
-
-            event.currentTarget;
-
-        const componentCode=
-
-            hotspot.dataset.component;
-
-        if(!componentCode){
-
-            return;
-
-        }
-
-        //--------------------------------------------------
-        // Update State (solo referencia interna)
-        //--------------------------------------------------
+    hotspotLeave(event) {
+        const hotspot = event.currentTarget;
+        const componentCode = hotspot.dataset.component;
+        if (!componentCode) return;
 
         SelectionState.clearHover();
 
-        //--------------------------------------------------
-        // Composer apaga la pieza automáticamente al salir
-        // el mouse (nativo, sin preguntar). Si esta pieza
-        // está SELECCIONADA, la volvemos a iluminar.
-        //--------------------------------------------------
-
-        if(SelectionState.isSelected(componentCode)){
-
-            if(typeof HighlightService!=="undefined"){
-
-                HighlightService.highlight(
-
-                    componentCode
-
-                );
-
+        if (SelectionState.isSelected(componentCode)) {
+            if (typeof HighlightService !== "undefined") {
+                HighlightService.highlight(componentCode);
             }
-
         }
-
     },
 
-
-
-    /* ======================================================
-       HOTSPOT CLICK
-    ====================================================== */
-
-    hotspotClick(event){
-
+    hotspotClick(event) {
         event.preventDefault();
-
         event.stopPropagation();
 
-        const hotspot=
-
-            event.currentTarget;
-
-        const componentCode=
-
-            hotspot.dataset.component;
-
-        if(!componentCode){
-
-            return;
-
-        }
+        const hotspot = event.currentTarget;
+        const componentCode = hotspot.dataset.component;
+        if (!componentCode) return;
 
         console.log("--------------------------------");
-        console.log("Hotspot :",hotspot.id);
-        console.log("Component :",componentCode);
+        console.log("Hotspot :", hotspot.id);
+        console.log("Component :", componentCode);
         console.log("--------------------------------");
 
-        //--------------------------------------------------
-        // Save Selection State
-        //--------------------------------------------------
+        SelectionState.select(componentCode);
 
-        SelectionState.select(
+        EventBus.emit("selection:requested", { componentId: componentCode });
 
-            componentCode
-
-        );
-
-        //--------------------------------------------------
-        // Application Selection
-        //--------------------------------------------------
-
-        SelectionManager.select(
-
-            componentCode
-
-        );
-
-        //--------------------------------------------------
-        // Developer Tools
-        //--------------------------------------------------
-
-        if(typeof SVGInspector!=="undefined"){
-
-            SVGInspector.inspect(
-
-                hotspot
-
-            );
-
+        if (typeof SVGInspector !== "undefined") {
+            SVGInspector.inspect(hotspot);
         }
-
     }
 
 };

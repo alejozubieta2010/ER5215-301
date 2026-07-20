@@ -17,6 +17,10 @@ import { Workspace } from '../ui/workspace.js';
 import { SelectionManager } from '../ui/selectionManager.js';
 import { Panel } from '../ui/panel.js';
 import { BOM } from '../ui/bom.js';
+import { NavigationService } from '../service/navigationService.js';
+import { HighlightService } from '../service/highlightService.js';
+import { SynchronizationService } from '../service/synchronizationService.js';
+import { HistoryService } from '../service/historyService.js';
 
 export const Engine = {
 
@@ -142,6 +146,11 @@ export const Engine = {
         UI.buildHeader();
 
         Workspace.initialize();
+
+        NavigationService.initialize();
+        HighlightService.initialize();
+        SynchronizationService.initialize();
+        HistoryService.initialize();
 
         SelectionManager.initialize();
 
