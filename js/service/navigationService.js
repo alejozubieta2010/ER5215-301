@@ -10,6 +10,7 @@ import { ComponentManager } from '../core/componentManager.js';
 import { Panel } from '../ui/panel.js';
 import { BOM } from '../ui/bom.js';
 import { ComposerAdapter } from '../modules/svg/composerAdapter.js';
+import { Model3DModule } from '../modules/model3d/model3d.js';
 
 export const NavigationService = {
 
@@ -38,12 +39,19 @@ export const NavigationService = {
         Panel.update(componentID);
         BOM.highlight(componentID);
         ComposerAdapter.highlightComponent(componentID);
+
+        if (Model3DModule && Model3DModule.isLoaded()) {
+            Model3DModule.focus(componentID);
+        }
     },
 
     clear() {
         Panel.showEmptyState();
         if (BOM.clearSelection) BOM.clearSelection();
         if (ComposerAdapter.clearHighlight) ComposerAdapter.clearHighlight();
+        if (Model3DModule && Model3DModule.isLoaded()) {
+            Model3DModule.clear();
+        }
     }
 
 };

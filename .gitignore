@@ -15,3 +15,6 @@ Desktop.ini
 
 # Graphify (generado, re-buildable)
 graphify-out/
+
+# Archivo legacy (no integrado en modulo ES)
+archive/

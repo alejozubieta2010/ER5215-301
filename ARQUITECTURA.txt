@@ -1,1 +1,0 @@
-tree "E:\ER5215-301_DEV" /F /A > "E:\ER5215-301_DEV_estructura.txt"

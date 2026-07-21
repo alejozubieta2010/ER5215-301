@@ -19,29 +19,21 @@ import { DocumentsModule } from '../modules/documents/documents.js';
 
 export const Workspace = {
 
-    /* ======================================================
-       PROPERTIES
-    ====================================================== */
-
     container: null,
 
+    container3d: null,
+
+    toggleBtn: null,
 
 
-    /* ======================================================
-       INITIALIZE
-    ====================================================== */
 
     initialize() {
 
         this.container = document.getElementById("viewer-container");
 
-        if (!this.container) {
+        this.container3d = document.getElementById("viewer-3d-container");
 
-            console.error("Workspace container not found.");
-
-            return;
-
-        }
+        this.createToggleButton();
 
         console.log("✔ Workspace Initialized");
 
@@ -49,9 +41,25 @@ export const Workspace = {
 
 
 
-    /* ======================================================
-       LOAD DEFAULT VIEW
-    ====================================================== */
+    createToggleButton() {
+
+        this.toggleBtn = document.createElement("button");
+
+        this.toggleBtn.id = "view-toggle";
+
+        this.toggleBtn.setAttribute("data-view", "svg");
+
+        this.toggleBtn.textContent = "3D";
+
+        this.toggleBtn.className = "view-toggle-btn";
+
+        this.toggleBtn.addEventListener("click", () => this.toggle());
+
+        this.container.appendChild(this.toggleBtn);
+
+    },
+
+
 
     loadDefaultView() {
 
@@ -95,81 +103,113 @@ export const Workspace = {
 
 
 
-    /* ======================================================
-       GENERIC VIEW LOADER
-    ====================================================== */
+    toggle() {
 
-    loadView(module, viewName) {
+        if (SDTD.workspace.currentView === "svg") {
 
-        this.clear();
+            this.showModel3D();
 
-        SDTD.workspace.currentView = viewName;
+        } else {
 
-        module.load();
+            this.showSVG();
 
-        console.log("✔ Workspace → " + viewName);
+        }
 
     },
 
 
-
-    /* ======================================================
-       SVG VIEW
-    ====================================================== */
 
     showSVG() {
 
-        this.loadView(
+        if (this.container) {
 
-            SVGModule,
+            this.container.style.display = "block";
 
-            "svg"
+        }
 
-        );
+        if (this.container3d) {
+
+            this.container3d.style.display = "none";
+
+        }
+
+        if (this.toggleBtn) {
+
+            this.toggleBtn.setAttribute("data-view", "svg");
+
+            this.toggleBtn.textContent = "3D";
+
+        }
+
+        SDTD.workspace.currentView = "svg";
+
+        this.container.innerHTML = "";
+
+        SVGModule.load();
+
+        if (this.toggleBtn) {
+
+            this.container.appendChild(this.toggleBtn);
+
+        }
+
+        console.log("✔ Workspace → SVG");
 
     },
 
 
-
-    /* ======================================================
-       3D VIEW
-    ====================================================== */
 
     showModel3D() {
 
-        this.loadView(
+        if (this.container) {
 
-            Model3DModule,
+            this.container.style.display = "none";
 
-            "model3d"
+        }
 
-        );
+        if (this.container3d) {
+
+            this.container3d.style.display = "block";
+
+        }
+
+        if (this.toggleBtn) {
+
+            this.toggleBtn.setAttribute("data-view", "3d");
+
+            this.toggleBtn.textContent = "2D";
+
+        }
+
+        SDTD.workspace.currentView = "3d";
+
+        Model3DModule.load().then(() => {
+
+            if (this.toggleBtn) {
+
+                this.container3d.appendChild(this.toggleBtn);
+
+            }
+
+        });
+
+        console.log("✔ Workspace → 3D");
 
     },
 
 
-
-    /* ======================================================
-       PDF VIEW
-    ====================================================== */
 
     showPDF() {
 
-        this.loadView(
+        SDTD.workspace.currentView = "pdf";
 
-            DocumentsModule,
+        DocumentsModule.load();
 
-            "pdf"
-
-        );
+        console.log("✔ Workspace → PDF");
 
     },
 
 
-
-    /* ======================================================
-       REFRESH CURRENT VIEW
-    ====================================================== */
 
     refresh() {
 
@@ -181,7 +221,7 @@ export const Workspace = {
 
                 break;
 
-            case "model3d":
+            case "3d":
 
                 this.showModel3D();
 
@@ -203,27 +243,17 @@ export const Workspace = {
 
 
 
-    /* ======================================================
-       CLEAR VIEWER
-    ====================================================== */
-
     clear() {
 
-        if (!this.container) {
+        if (this.container) {
 
-            return;
+            this.container.innerHTML = "";
 
         }
-
-        this.container.innerHTML = "";
 
     },
 
 
-
-    /* ======================================================
-       CURRENT VIEW
-    ====================================================== */
 
     getCurrentView() {
 

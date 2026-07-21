@@ -7,6 +7,7 @@
 
 import { EventBus } from '../core/eventBus.js';
 import { ComposerAdapter } from '../modules/svg/composerAdapter.js';
+import { Model3DModule } from '../modules/model3d/model3d.js';
 import { BOM } from '../ui/bom.js';
 
 export const HighlightService = {
@@ -45,6 +46,10 @@ export const HighlightService = {
             ComposerAdapter.highlightComponent(componentID);
         }
 
+        if (Model3DModule && Model3DModule.isLoaded()) {
+            Model3DModule.highlight(componentID);
+        }
+
         if (typeof BOM !== "undefined") {
             BOM.highlight(componentID);
         }
@@ -55,6 +60,10 @@ export const HighlightService = {
 
         if (typeof ComposerAdapter !== "undefined") {
             ComposerAdapter.clearHighlight();
+        }
+
+        if (Model3DModule && Model3DModule.isLoaded()) {
+            Model3DModule.clear();
         }
 
         if (typeof BOM !== "undefined") {

@@ -19,7 +19,7 @@
 
         "documents":true,
 
-        "model3d":false
+        "model3d":true
 
     },
 
@@ -27,11 +27,9 @@
 
         "svg":"resources/svg/ER5215-301.svg",
 
-        "model3d":"resources/3d/ER5215-301.html",
+        "model3d":"resources/models/ER5215-301.glb",
 
-        "thumbnail":"resources/images/thumbnail.png",
-
-        "preview":"resources/images/preview.jpg",
+        "hdr":"resources/hdr/studio_small_03_1k.hdr",
 
         "pdf":"resources/pdf/ER5215-301.pdf"
 
