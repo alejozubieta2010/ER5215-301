@@ -36,6 +36,8 @@ export const SDTD = {
 
     documents: [],
 
+    svgComponents: new Set(),
+
     /* ------------------------------
        Workspace State
     ------------------------------ */

@@ -12,6 +12,8 @@
 
 import { ComposerEvents } from './composerEvents.js';
 import { HighlightService } from '../../service/highlightService.js';
+import { SDTD } from '../../core/app.js';
+import { EventBus } from '../../core/eventBus.js';
 
 export const ComposerLookup={
 
@@ -118,6 +120,10 @@ export const ComposerLookup={
             ).length
 
         );
+
+        SDTD.svgComponents = new Set(Object.keys(this.componentMap));
+
+        EventBus.emit("svg:components:discovered", { components: SDTD.svgComponents });
 
         //--------------------------------------------------
         // Color de resaltado (viene del propio SVG del cliente)

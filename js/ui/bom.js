@@ -21,6 +21,9 @@ export const BOM = {
 
     initialize() {
         this.container = document.getElementById("bom-content");
+        EventBus.on("extra-parts:toggled", (data) => this.onExtraPartsToggled(data));
+        EventBus.on("bom:updated", () => this.build());
+        EventBus.on("svg:components:discovered", () => this.build());
         console.log("✔ BOM Initialized");
     },
 
@@ -52,10 +55,14 @@ export const BOM = {
                 <tbody>
         `;
 
-        SDTD.components.forEach(component => {
+        const visible = SDTD.svgComponents.size > 0
+            ? SDTD.components.filter(c => SDTD.svgComponents.has(c.id))
+            : SDTD.components;
+
+        visible.forEach((component, index) => {
             html += `
                 <tr data-component="${component.id}">
-                    <td>${component.item ?? "-"}</td>
+                    <td>${index + 1}</td>
                     <td>${component.id}</td>
                     <td>${component.description ?? "-"}</td>
                     <td>${component.quantity ?? "-"}</td>
@@ -133,7 +140,8 @@ export const BOM = {
         const selectAllCheckbox = document.getElementById("bom-select-all");
         if (!selectAllCheckbox) return;
 
-        const totalCount = SDTD.components.length;
+        const rows = this.container.querySelectorAll("tbody tr");
+        const totalCount = rows.length;
         const selectedCount = this.quoteSelection.size;
 
         selectAllCheckbox.checked = totalCount > 0 && selectedCount === totalCount;
@@ -167,6 +175,18 @@ export const BOM = {
             this.selectedRow.style.removeProperty("--bom-highlight-color");
             this.selectedRow = null;
         }
+    },
+
+    onExtraPartsToggled(data) {
+        if (!this.container) return;
+        const rows = this.container.querySelectorAll("tbody tr");
+        rows.forEach(row => {
+            const compId = row.dataset.component;
+            const comp = SDTD.components.find(c => c.id === compId);
+            if (comp && comp.visible3d === false) {
+                row.style.display = data.hidden ? "none" : "";
+            }
+        });
     }
 
 };

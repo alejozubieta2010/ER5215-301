@@ -28,21 +28,28 @@ export class ReferenceIndex3D {
     build(root) {
         this.references.clear();
         this.nameToReference.clear();
-        this.buildRecursive(root, null);
+        this.buildRecursive(root, null, false);
     }
 
-    buildRecursive(node, inheritedRef) {
+    buildRecursive(node, inheritedRef, inBomAssembly) {
         let currentRef = inheritedRef;
+        let inAssembly = inBomAssembly;
 
         const name = node.name;
         if (name) {
-            const resolvedRef = this.extractReference(name);
-            if (resolvedRef) {
-                currentRef = resolvedRef;
+            const overrideRef = this.overrideMap.get(name);
+            if (overrideRef && this.bomLookup.has(overrideRef)) {
+                currentRef = overrideRef;
+                inAssembly = true;
+            } else if (inAssembly) {
+                const resolvedRef = this.extractReference(name);
+                if (resolvedRef) {
+                    currentRef = resolvedRef;
+                }
             }
         }
 
-        if (node.isMesh && currentRef) {
+        if (node.isMesh && currentRef && inAssembly) {
             node.userData.reference = currentRef;
             this.nameToReference.set(name, currentRef);
             if (!this.references.has(currentRef)) {
@@ -53,7 +60,7 @@ export class ReferenceIndex3D {
 
         if (node.children) {
             for (const child of node.children) {
-                this.buildRecursive(child, currentRef);
+                this.buildRecursive(child, currentRef, inAssembly);
             }
         }
     }

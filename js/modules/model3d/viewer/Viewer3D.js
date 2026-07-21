@@ -8,6 +8,7 @@ import { BomBuilder3D } from "./BomBuilder3D.js";
 import { GLBLoader } from "./GLBLoader.js";
 import { CameraAnimator } from "./CameraAnimator.js";
 import { SelectionManager3D } from "./SelectionManager3D.js";
+import { EventBus } from "../../../core/eventBus.js";
 
 export class Viewer3D {
 
@@ -69,7 +70,9 @@ export class Viewer3D {
 
         this.controls = new OrbitControls(this.camera, this.renderer.domElement);
         this.controls.enableDamping = true;
-        this.controls.dampingFactor = 0.05;
+        this.controls.dampingFactor = 0.25;
+        this.controls.minPolarAngle = 0;
+        this.controls.maxPolarAngle = Math.PI * 2;
         this.controls.update();
 
         this.referenceIndex = new ReferenceIndex3D();
@@ -151,13 +154,20 @@ export class Viewer3D {
 
         const bomRefs = new Set(this.referenceIndex.getAllReferences());
 
+        const hiddenRefs = new Set();
+        for (const comp of this.bomData) {
+            if (comp.visible3d === false) {
+                hiddenRefs.add(comp.id);
+            }
+        }
+
         root.traverse((obj) => {
 
             if (!obj.isMesh) return;
 
             const ref = this.referenceIndex.nameToReference.get(obj.name);
 
-            if (!ref || !bomRefs.has(ref)) {
+            if (!ref || !bomRefs.has(ref) || hiddenRefs.has(ref)) {
 
                 this.nonBomMeshes.push(obj);
 
@@ -184,6 +194,8 @@ export class Viewer3D {
             this.nonBomMeshes.forEach(m => { m.visible = !this.nonBomHidden; });
 
             btn.textContent = this.nonBomHidden ? "Mostrar piezas extra" : "Ocultar piezas extra";
+
+            EventBus.emit("extra-parts:toggled", { hidden: this.nonBomHidden });
 
         });
 

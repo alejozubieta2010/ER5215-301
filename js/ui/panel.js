@@ -131,13 +131,13 @@ export const Panel = {
 
             <div class="component-name">
 
-                ${component.name || component.id}
+                ${component.id}
 
             </div>
 
             <div class="component-code">
 
-                ${component.id}
+                ${component.description || "-"}
 
             </div>
 
