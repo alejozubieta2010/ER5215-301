@@ -10,6 +10,7 @@
 
 import { SDTD } from '../../core/app.js';
 import { ComposerAdapter } from './composerAdapter.js';
+import { SVGPanZoom } from './svgPanZoom.js';
 
 export const SVGModule = {
 
@@ -87,6 +88,9 @@ export const SVGModule = {
                     console.warn("ComposerAdapter not found.");
 
                 }
+
+                // Initialize pan/zoom for touch & mouse
+                SVGPanZoom.initialize(this.container, this.viewer);
 
             }
 

@@ -52,7 +52,7 @@ export const ComposerAdapter = {
 
         ComposerLookup.initialize(this.svgDocument);
 
-        this.svgDocument.addEventListener("click", () => {
+        this.svgDocument.addEventListener("pointerdown", () => {
             EventBus.emit("selection:clear-requested");
         });
 

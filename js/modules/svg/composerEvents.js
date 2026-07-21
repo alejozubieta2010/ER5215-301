@@ -15,9 +15,9 @@ export const ComposerEvents = {
     register(hotspot) {
         if (!hotspot) return;
 
-        hotspot.addEventListener("mouseenter", event => this.hotspotEnter(event));
-        hotspot.addEventListener("mouseleave", event => this.hotspotLeave(event));
-        hotspot.addEventListener("click", event => this.hotspotClick(event));
+        hotspot.addEventListener("pointerenter", event => this.hotspotEnter(event));
+        hotspot.addEventListener("pointerleave", event => this.hotspotLeave(event));
+        hotspot.addEventListener("pointerdown", event => this.hotspotClick(event));
     },
 
     hotspotEnter(event) {
