@@ -18,3 +18,11 @@ graphify-out/
 
 # Archivo legacy (no integrado en modulo ES)
 archive/
+
+# Python
+__pycache__/
+*.pyc
+
+# Temp
+*.tmp
+*.bak
