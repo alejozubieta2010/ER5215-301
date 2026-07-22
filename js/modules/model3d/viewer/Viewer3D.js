@@ -15,7 +15,7 @@ export class Viewer3D {
     constructor(container, options = {}) {
         this.container = container;
         this.modelPath = options.modelPath || "resources/models/ER5215-301.glb";
-        this.hdrPath = options.hdrPath || "resources/hdr/studio_small_03_1k.hdr";
+        this.hdrPath = options.hdrPath || "resources/hdr/white_studio_05_2k.hdr";
         this.bomData = options.bomData || [];
         this.onSelect = options.onSelect || null;
 
@@ -37,6 +37,8 @@ export class Viewer3D {
         this._resizeObserver = null;
         this._animationId = null;
         this._destroyed = false;
+        this._isResetting = false;
+        this._postResetQuat = null;
     }
 
     init() {
@@ -70,9 +72,10 @@ export class Viewer3D {
 
         this.controls = new TrackballControls(this.camera, this.renderer.domElement);
         this.controls.enableDamping = true;
-        this.controls.dampingFactor = 0.25;
-        this.controls.rotateSpeed = 5.0;
+        this.controls.dampingFactor = 0.85;
+        this.controls.rotateSpeed = 2.0;
         this.controls.zoomSpeed = 1.2;
+
         this.controls.panSpeed = 0.8;
         this.controls.noRotate = false;
         this.controls.noZoom = false;
@@ -103,6 +106,7 @@ export class Viewer3D {
             (texture) => {
                 texture.mapping = THREE.EquirectangularReflectionMapping;
                 this.scene.environment = texture;
+                this.renderer.toneMappingExposure = 1.0;
             },
             undefined,
             () => {
@@ -147,6 +151,7 @@ export class Viewer3D {
         this.collectNonBomMeshes(this.modelRoot);
 
         this.createExtraPartsButton();
+        this.createHomeButton();
 
     }
 
@@ -205,6 +210,101 @@ export class Viewer3D {
 
     }
 
+    createHomeButton() {
+        const btn = document.createElement("button");
+        btn.className = "home-view-btn";
+        btn.title = "Vista isométrica";
+        btn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+        </svg>`;
+        btn.addEventListener("click", () => this.resetToHome());
+        this.container.appendChild(btn);
+    }
+
+    resetToHome() {
+        if (!this.homePosition || !this.homeTarget) return;
+
+        const duration = 600;
+        const startPos = this.camera.position.clone();
+        const startTarget = this.controls.target.clone();
+        const startQuat = this.camera.quaternion.clone();
+        const startZoom = this.camera.zoom;
+        const startTime = performance.now();
+
+        this._isResetting = true;
+        this.controls.enabled = false;
+
+        const tmpQuat = new THREE.Quaternion();
+
+        const animate = (time) => {
+            const elapsed = time - startTime;
+            const t = Math.min(elapsed / duration, 1);
+            const ease = t < 0.5
+                ? 4 * t * t * t
+                : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+            this.camera.position.lerpVectors(startPos, this.homePosition, ease);
+            this.controls.target.lerpVectors(startTarget, this.homeTarget, ease);
+
+            tmpQuat.slerpQuaternions(startQuat, this.homeQuaternion, ease);
+            this.camera.quaternion.copy(tmpQuat);
+
+            if (this.camera.isOrthographicCamera) {
+                this.camera.zoom = startZoom + (this.homeZoom - startZoom) * ease;
+                this.camera.updateProjectionMatrix();
+            }
+
+            if (t < 1) {
+                requestAnimationFrame(animate);
+            } else {
+                this.camera.position.copy(this.homePosition);
+                this.camera.quaternion.copy(this.homeQuaternion);
+                this.camera.zoom = this.homeZoom;
+                this.camera.updateProjectionMatrix();
+
+                if (this.modelRoot) {
+                    this.modelRoot.rotation.set(Math.PI / 2, 0, Math.PI);
+                }
+
+                this.controls.dispose();
+                this.controls = new TrackballControls(this.camera, this.renderer.domElement);
+                this.controls.target.copy(this.homeTarget);
+                this.controls.rotateSpeed = 2.0;
+                this.controls.dampingFactor = 0.85;
+                this.controls.enabled = true;
+                this.camera.quaternion.copy(this.homeQuaternion);
+
+                this._isResetting = false;
+                this._postResetQuat = this.homeQuaternion.clone();
+
+                const onPointerDown = (e) => {
+                    this._dragStart = { x: e.clientX, y: e.clientY };
+                    const onPointerMove = (e2) => {
+                        const dx = e2.clientX - this._dragStart.x;
+                        const dy = e2.clientY - this._dragStart.y;
+                        if (Math.sqrt(dx * dx + dy * dy) > 5) {
+                            this._postResetQuat = null;
+                            window.removeEventListener('pointermove', onPointerMove);
+                            window.removeEventListener('pointerup', onPointerUp);
+                        }
+                    };
+                    const onPointerUp = () => {
+                        window.removeEventListener('pointermove', onPointerMove);
+                        window.removeEventListener('pointerup', onPointerUp);
+                    };
+                    window.addEventListener('pointermove', onPointerMove);
+                    window.addEventListener('pointerup', onPointerUp);
+                };
+                this.renderer.domElement.addEventListener('pointerdown', onPointerDown);
+                this._clearPostReset = onPointerDown;
+            }
+        };
+
+        requestAnimationFrame(animate);
+    }
+
 
 
     fitCameraToModel() {
@@ -249,6 +349,12 @@ export class Viewer3D {
         );
         this.controls.target.copy(center);
         this.controls.update();
+
+        this.homePosition = this.camera.position.clone();
+        this.homeTarget = this.controls.target.clone();
+        this.homeZoom = this.camera.zoom;
+        this.homeQuaternion = this.camera.quaternion.clone();
+        this.homeRotation = { x: Math.PI / 2, y: 0, z: Math.PI };
     }
 
     highlightComponent(bomId) {
@@ -297,7 +403,13 @@ export class Viewer3D {
 
         this._animationId = requestAnimationFrame(() => this.animate());
 
-        this.controls.update();
+        if (!this._isResetting) {
+            this.controls.update();
+        }
+
+        if (this._postResetQuat) {
+            this.camera.quaternion.copy(this._postResetQuat);
+        }
 
         this.renderer.render(this.scene, this.camera);
     }
@@ -330,6 +442,10 @@ export class Viewer3D {
         if (this.controls) {
             this.controls.dispose();
             this.controls = null;
+        }
+
+        if (this._clearPostReset && this.renderer) {
+            this.renderer.domElement.removeEventListener('pointerdown', this._clearPostReset);
         }
 
         this.nonBomMeshes = [];

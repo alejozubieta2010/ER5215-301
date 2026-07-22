@@ -316,6 +316,27 @@ body{
 
 }
 
+.home-view-btn {
+    position: absolute;
+    top: 56px;
+    right: 10px;
+    z-index: 100;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.home-view-btn:hover {
+    background: var(--border);
+}
 
 /* ==========================================================
    PANEL
