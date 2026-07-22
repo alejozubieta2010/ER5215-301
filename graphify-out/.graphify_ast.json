@@ -1,0 +1,4942 @@
+{
+  "nodes": [
+    {
+      "id": "js_core_app",
+      "label": "app.js",
+      "file_type": "code",
+      "source_file": "js/core/app.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_core_app_sdtd",
+      "label": "SDTD",
+      "file_type": "code",
+      "source_file": "js/core/app.js",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_core_componentmanager",
+      "label": "componentManager.js",
+      "file_type": "code",
+      "source_file": "js/core/componentManager.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_core_componentmanager_componentmanager",
+      "label": "ComponentManager",
+      "file_type": "code",
+      "source_file": "js/core/componentManager.js",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_core_datamanager",
+      "label": "dataManager.js",
+      "file_type": "code",
+      "source_file": "js/core/dataManager.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_core_datamanager_datamanager",
+      "label": "DataManager",
+      "file_type": "code",
+      "source_file": "js/core/dataManager.js",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_core_engine",
+      "label": "engine.js",
+      "file_type": "code",
+      "source_file": "js/core/engine.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_core_engine_engine",
+      "label": "Engine",
+      "file_type": "code",
+      "source_file": "js/core/engine.js",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_core_eventbus",
+      "label": "eventBus.js",
+      "file_type": "code",
+      "source_file": "js/core/eventBus.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_core_eventbus_eventbus",
+      "label": "EventBus",
+      "file_type": "code",
+      "source_file": "js/core/eventBus.js",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_core_modulemanager",
+      "label": "moduleManager.js",
+      "file_type": "code",
+      "source_file": "js/core/moduleManager.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_core_modulemanager_modulemanager",
+      "label": "ModuleManager",
+      "file_type": "code",
+      "source_file": "js/core/moduleManager.js",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_core_selectionstate",
+      "label": "selectionState.js",
+      "file_type": "code",
+      "source_file": "js/core/selectionState.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_core_selectionstate_selectionstate",
+      "label": "SelectionState",
+      "file_type": "code",
+      "source_file": "js/core/selectionState.js",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_documents_documents",
+      "label": "documents.js",
+      "file_type": "code",
+      "source_file": "js/modules/documents/documents.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_documents_documents_documentsmodule",
+      "label": "DocumentsModule",
+      "file_type": "code",
+      "source_file": "js/modules/documents/documents.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_model3d",
+      "label": "model3d.js",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/model3d.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_model3d_model3dmodule",
+      "label": "Model3DModule",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/model3d.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_axesoverlay",
+      "label": "AxesOverlay.js",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_axesoverlay_axesoverlay",
+      "label": "AxesOverlay",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_axesoverlay_axesoverlay_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_axesoverlay_axesoverlay_create",
+      "label": ".create()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_axesoverlay_axesoverlay_project",
+      "label": "._project()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L39",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_axesoverlay_axesoverlay_oncanvasclick",
+      "label": "._onCanvasClick()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L55",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_axesoverlay_axesoverlay_snaptoaxis",
+      "label": "._snapToAxis()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L79",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_axesoverlay_axesoverlay_animatecamera",
+      "label": "._animateCamera()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L96",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_axesoverlay_axesoverlay_update",
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L122",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_axesoverlay_axesoverlay_dispose",
+      "label": ".dispose()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L163",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_bombuilder3d",
+      "label": "BomBuilder3D.js",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/BomBuilder3D.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d",
+      "label": "BomBuilder3D",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/BomBuilder3D.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/BomBuilder3D.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d_build",
+      "label": ".build()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/BomBuilder3D.js",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d_buildrecursive",
+      "label": ".buildRecursive()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/BomBuilder3D.js",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_cameraanimator",
+      "label": "CameraAnimator.js",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_cameraanimator_cameraanimator",
+      "label": "CameraAnimator",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_cameraanimator_cameraanimator_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_cameraanimator_cameraanimator_setdefaultzoom",
+      "label": ".setDefaultZoom()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_cameraanimator_cameraanimator_setmodelsize",
+      "label": ".setModelSize()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_cameraanimator_cameraanimator_focuscomponent",
+      "label": ".focusComponent()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_cameraanimator_cameraanimator_animateto",
+      "label": ".animateTo()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L79",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_cameraanimator_cameraanimator_clearfocus",
+      "label": ".clearFocus()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L115",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_glbloader",
+      "label": "GLBLoader.js",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_glbloader_glbloader",
+      "label": "GLBLoader",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_glbloader_glbloader_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_glbloader_glbloader_load",
+      "label": ".load()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_glbloader_glbloader_applyfrontside",
+      "label": ".applyFrontSide()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_glbloader_glbloader_applytranslucency",
+      "label": ".applyTranslucency()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L61",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_highlightmanager3d",
+      "label": "HighlightManager3D.js",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d",
+      "label": "HighlightManager3D",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_highlightreferences",
+      "label": ".highlightReferences()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_highlightmeshes",
+      "label": ".highlightMeshes()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_clearhighlight",
+      "label": ".clearHighlight()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_applyhighlightmaterial",
+      "label": ".applyHighlightMaterial()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L35",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_restorematerial",
+      "label": ".restoreMaterial()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L53",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_modelindex3d",
+      "label": "ModelIndex3D.js",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ModelIndex3D.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_modelindex3d_modelindex3d",
+      "label": "ModelIndex3D",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ModelIndex3D.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_modelindex3d_modelindex3d_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ModelIndex3D.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_modelindex3d_modelindex3d_build",
+      "label": ".build()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ModelIndex3D.js",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_modelindex3d_modelindex3d_findbyname",
+      "label": ".findByName()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ModelIndex3D.js",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_modelindex3d_modelindex3d_findbyuuid",
+      "label": ".findByUUID()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ModelIndex3D.js",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_modelindex3d_modelindex3d_findbynamepattern",
+      "label": ".findByNamePattern()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ModelIndex3D.js",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_referenceindex3d",
+      "label": "ReferenceIndex3D.js",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "label": "ReferenceIndex3D",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_buildfromcomponents",
+      "label": ".buildFromComponents()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_build",
+      "label": ".build()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_buildrecursive",
+      "label": ".buildRecursive()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_extractreference",
+      "label": ".extractReference()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L53",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_getreferences",
+      "label": ".getReferences()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L60",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_getallreferences",
+      "label": ".getAllReferences()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L64",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_getmeshesbyreferences",
+      "label": ".getMeshesByReferences()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L68",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_selectionmanager3d",
+      "label": "SelectionManager3D.js",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d",
+      "label": "SelectionManager3D",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_onpointerdown",
+      "label": ".onPointerDown()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_onpointerup",
+      "label": ".onPointerUp()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_bindevents",
+      "label": ".bindEvents()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L70",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_dispose",
+      "label": ".dispose()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L79",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d",
+      "label": "Viewer3D.js",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "label": "Viewer3D",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_init",
+      "label": ".init()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_loadhdr",
+      "label": ".loadHDR()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L102",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_loadmodel",
+      "label": ".loadModel()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L123",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_collectnonbommeshes",
+      "label": ".collectNonBomMeshes()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L158",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_createextrapartsbutton",
+      "label": ".createExtraPartsButton()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L189",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_createhomebutton",
+      "label": ".createHomeButton()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L213",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_resettohome",
+      "label": ".resetToHome()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L226",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_fitcameratomodel",
+      "label": ".fitCameraToModel()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L310",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_highlightcomponent",
+      "label": ".highlightComponent()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L360",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_clearhighlight",
+      "label": ".clearHighlight()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L365",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_focuscomponent",
+      "label": ".focusComponent()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L370",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_onresize",
+      "label": ".onResize()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L379",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_animate",
+      "label": ".animate()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L401",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d_destroy",
+      "label": ".destroy()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L417",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy",
+      "label": "Viewer3D_legacy.js",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "label": "Viewer3D",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_init",
+      "label": ".init()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L42",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_loadhdr",
+      "label": ".loadHDR()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L100",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_loadmodel",
+      "label": ".loadModel()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L120",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_collectnonbommeshes",
+      "label": ".collectNonBomMeshes()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L154",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_createextrapartsbutton",
+      "label": ".createExtraPartsButton()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L185",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_fitcameratomodel",
+      "label": ".fitCameraToModel()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L211",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_highlightcomponent",
+      "label": ".highlightComponent()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L255",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_clearhighlight",
+      "label": ".clearHighlight()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L260",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_focuscomponent",
+      "label": ".focusComponent()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L265",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_onresize",
+      "label": ".onResize()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L274",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_animate",
+      "label": ".animate()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L296",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_destroy",
+      "label": ".destroy()",
+      "file_type": "code",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L306",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_svg_composeradapter",
+      "label": "composerAdapter.js",
+      "file_type": "code",
+      "source_file": "js/modules/svg/composerAdapter.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_svg_composeradapter_composeradapter",
+      "label": "ComposerAdapter",
+      "file_type": "code",
+      "source_file": "js/modules/svg/composerAdapter.js",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_svg_composerevents",
+      "label": "composerEvents.js",
+      "file_type": "code",
+      "source_file": "js/modules/svg/composerEvents.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_svg_composerevents_composerevents",
+      "label": "ComposerEvents",
+      "file_type": "code",
+      "source_file": "js/modules/svg/composerEvents.js",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_svg_composerlookup",
+      "label": "composerLookup.js",
+      "file_type": "code",
+      "source_file": "js/modules/svg/composerLookup.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_svg_composerlookup_composerlookup",
+      "label": "ComposerLookup",
+      "file_type": "code",
+      "source_file": "js/modules/svg/composerLookup.js",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_svg_svg",
+      "label": "svg.js",
+      "file_type": "code",
+      "source_file": "js/modules/svg/svg.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_svg_svg_svgmodule",
+      "label": "SVGModule",
+      "file_type": "code",
+      "source_file": "js/modules/svg/svg.js",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_svg_svginspector",
+      "label": "svgInspector.js",
+      "file_type": "code",
+      "source_file": "js/modules/svg/svgInspector.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_svg_svginspector_svginspector",
+      "label": "SVGInspector",
+      "file_type": "code",
+      "source_file": "js/modules/svg/svgInspector.js",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_svg_svgpanzoom",
+      "label": "svgPanZoom.js",
+      "file_type": "code",
+      "source_file": "js/modules/svg/svgPanZoom.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_modules_svg_svgpanzoom_svgpanzoom",
+      "label": "SVGPanZoom",
+      "file_type": "code",
+      "source_file": "js/modules/svg/svgPanZoom.js",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_service_documentservice",
+      "label": "documentService.js",
+      "file_type": "code",
+      "source_file": "js/service/documentService.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_service_documentservice_documentservice",
+      "label": "DocumentService",
+      "file_type": "code",
+      "source_file": "js/service/documentService.js",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_service_highlightservice",
+      "label": "highlightService.js",
+      "file_type": "code",
+      "source_file": "js/service/highlightService.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_service_highlightservice_highlightservice",
+      "label": "HighlightService",
+      "file_type": "code",
+      "source_file": "js/service/highlightService.js",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_service_historyservice",
+      "label": "historyService.js",
+      "file_type": "code",
+      "source_file": "js/service/historyService.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_service_historyservice_historyservice",
+      "label": "HistoryService",
+      "file_type": "code",
+      "source_file": "js/service/historyService.js",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_service_navigationservice",
+      "label": "navigationService.js",
+      "file_type": "code",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_service_navigationservice_navigationservice",
+      "label": "NavigationService",
+      "file_type": "code",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_service_synchronizationservice",
+      "label": "synchronizationService.js",
+      "file_type": "code",
+      "source_file": "js/service/synchronizationService.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_service_synchronizationservice_synchronizationservice",
+      "label": "SynchronizationService",
+      "file_type": "code",
+      "source_file": "js/service/synchronizationService.js",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_ui_bom",
+      "label": "bom.js",
+      "file_type": "code",
+      "source_file": "js/ui/bom.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_ui_bom_bom",
+      "label": "BOM",
+      "file_type": "code",
+      "source_file": "js/ui/bom.js",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_ui_panel",
+      "label": "panel.js",
+      "file_type": "code",
+      "source_file": "js/ui/panel.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_ui_panel_panel",
+      "label": "Panel",
+      "file_type": "code",
+      "source_file": "js/ui/panel.js",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_ui_selectionmanager",
+      "label": "selectionManager.js",
+      "file_type": "code",
+      "source_file": "js/ui/selectionManager.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_ui_selectionmanager_selectionmanager",
+      "label": "SelectionManager",
+      "file_type": "code",
+      "source_file": "js/ui/selectionManager.js",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_ui_ui",
+      "label": "ui.js",
+      "file_type": "code",
+      "source_file": "js/ui/ui.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_ui_ui_ui",
+      "label": "UI",
+      "file_type": "code",
+      "source_file": "js/ui/ui.js",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_ui_workspace",
+      "label": "workspace.js",
+      "file_type": "code",
+      "source_file": "js/ui/workspace.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_ui_workspace_workspace",
+      "label": "Workspace",
+      "file_type": "code",
+      "source_file": "js/ui/workspace.js",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_adapters_exceladapter",
+      "label": "excelAdapter.js",
+      "file_type": "code",
+      "source_file": "pipeline/adapters/excelAdapter.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_adapters_exceladapter_exceladapter",
+      "label": "ExcelAdapter",
+      "file_type": "code",
+      "source_file": "pipeline/adapters/excelAdapter.js",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_adapters_svgsourceadapter",
+      "label": "svgSourceAdapter.js",
+      "file_type": "code",
+      "source_file": "pipeline/adapters/svgSourceAdapter.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_adapters_svgsourceadapter_svgsourceadapter",
+      "label": "SvgSourceAdapter",
+      "file_type": "code",
+      "source_file": "pipeline/adapters/svgSourceAdapter.js",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_generator",
+      "label": "generator.js",
+      "file_type": "code",
+      "source_file": "pipeline/generator.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_generator_generator",
+      "label": "Generator",
+      "file_type": "code",
+      "source_file": "pipeline/generator.js",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_xlsx_full_min",
+      "label": "xlsx.full.min.js",
+      "file_type": "code",
+      "source_file": "pipeline/xlsx.full.min.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_xlsx_full_min_make_xlsx_lib",
+      "label": "make_xlsx_lib()",
+      "file_type": "code",
+      "source_file": "pipeline/xlsx.full.min.js",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "resources_analyze",
+      "label": "analyze.py",
+      "file_type": "code",
+      "source_file": "resources/analyze.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_analyze",
+      "label": "analyze.py",
+      "file_type": "code",
+      "source_file": "scripts/analyze.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_analyze_dof",
+      "label": "analyze_dof.py",
+      "file_type": "code",
+      "source_file": "scripts/analyze_dof.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_analyze_dof_get_transform",
+      "label": "get_transform()",
+      "file_type": "code",
+      "source_file": "scripts/analyze_dof.py",
+      "source_location": "L60",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_analyze_dof_print_node",
+      "label": "print_node()",
+      "file_type": "code",
+      "source_file": "scripts/analyze_dof.py",
+      "source_location": "L73",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_analyze_dof_rationale_61",
+      "label": "Extract transform info from a node.",
+      "file_type": "rationale",
+      "source_file": "scripts/analyze_dof.py",
+      "source_location": "L61",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_check_glb",
+      "label": "check_glb.py",
+      "file_type": "code",
+      "source_file": "scripts/check_glb.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_check_glb_has_geometry",
+      "label": "has_geometry()",
+      "file_type": "code",
+      "source_file": "scripts/check_glb.py",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_export_bom",
+      "label": "export_bom.py",
+      "file_type": "code",
+      "source_file": "scripts/export_bom.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_export_bom_export_bom",
+      "label": "export_bom()",
+      "file_type": "code",
+      "source_file": "scripts/export_bom.py",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_watch_bom",
+      "label": "watch_bom.py",
+      "file_type": "code",
+      "source_file": "scripts/watch_bom.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "js_core_app",
+      "target": "js_core_engine",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/app.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_app",
+      "target": "js_core_engine_engine",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/app.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_app",
+      "target": "js_core_app_sdtd",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/app.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_componentmanager",
+      "target": "js_core_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/componentManager.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_componentmanager",
+      "target": "js_core_app_sdtd",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/componentManager.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_componentmanager",
+      "target": "js_core_componentmanager_componentmanager",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/componentManager.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_datamanager",
+      "target": "js_core_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/dataManager.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_datamanager",
+      "target": "js_core_app_sdtd",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/dataManager.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_datamanager",
+      "target": "js_core_eventbus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/dataManager.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_datamanager",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/dataManager.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_datamanager",
+      "target": "js_core_datamanager_datamanager",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/dataManager.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_core_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_core_app_sdtd",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_core_datamanager",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_core_datamanager_datamanager",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_core_componentmanager",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_core_componentmanager_componentmanager",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_core_selectionstate",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_core_selectionstate_selectionstate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_core_modulemanager",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_core_modulemanager_modulemanager",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_ui_ui",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_ui_ui_ui",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_ui_workspace",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_ui_workspace_workspace",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_ui_selectionmanager",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_ui_selectionmanager_selectionmanager",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_ui_panel",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_ui_panel_panel",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_ui_bom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_ui_bom_bom",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_service_navigationservice",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_service_navigationservice_navigationservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_service_highlightservice",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_service_highlightservice_highlightservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_service_synchronizationservice",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_service_synchronizationservice_synchronizationservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_service_historyservice",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_service_historyservice_historyservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_engine",
+      "target": "js_core_engine_engine",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/engine.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_eventbus",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/eventBus.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_modulemanager",
+      "target": "js_core_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/moduleManager.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_modulemanager",
+      "target": "js_core_app_sdtd",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/moduleManager.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_modulemanager",
+      "target": "js_modules_svg_svg",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/moduleManager.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_modulemanager",
+      "target": "js_modules_svg_svg_svgmodule",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/moduleManager.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_modulemanager",
+      "target": "js_modules_documents_documents",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/moduleManager.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_modulemanager",
+      "target": "js_modules_documents_documents_documentsmodule",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/moduleManager.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_modulemanager",
+      "target": "js_modules_model3d_model3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/moduleManager.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_modulemanager",
+      "target": "js_modules_model3d_model3d_model3dmodule",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/moduleManager.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_modulemanager",
+      "target": "js_core_modulemanager_modulemanager",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/moduleManager.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_core_selectionstate",
+      "target": "js_core_selectionstate_selectionstate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/core/selectionState.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_documents_documents",
+      "target": "js_modules_documents_documents_documentsmodule",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/documents/documents.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_model3d",
+      "target": "js_core_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/model3d.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_model3d",
+      "target": "js_core_app_sdtd",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/model3d.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_model3d",
+      "target": "js_modules_model3d_viewer_viewer3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/model3d.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_model3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/model3d.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_model3d",
+      "target": "js_ui_selectionmanager",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/model3d.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_model3d",
+      "target": "js_ui_selectionmanager_selectionmanager",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/model3d.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_model3d",
+      "target": "js_modules_model3d_model3d_model3dmodule",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/model3d.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay",
+      "target": "js_modules_model3d_viewer_axesoverlay_axesoverlay",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay_axesoverlay",
+      "target": "js_modules_model3d_viewer_axesoverlay_axesoverlay_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay_axesoverlay",
+      "target": "js_modules_model3d_viewer_axesoverlay_axesoverlay_create",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay_axesoverlay",
+      "target": "js_modules_model3d_viewer_axesoverlay_axesoverlay_project",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay_axesoverlay",
+      "target": "js_modules_model3d_viewer_axesoverlay_axesoverlay_oncanvasclick",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay_axesoverlay",
+      "target": "js_modules_model3d_viewer_axesoverlay_axesoverlay_snaptoaxis",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay_axesoverlay",
+      "target": "js_modules_model3d_viewer_axesoverlay_axesoverlay_animatecamera",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay_axesoverlay",
+      "target": "js_modules_model3d_viewer_axesoverlay_axesoverlay_update",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay_axesoverlay",
+      "target": "js_modules_model3d_viewer_axesoverlay_axesoverlay_dispose",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L163",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay_axesoverlay_oncanvasclick",
+      "target": "js_modules_model3d_viewer_axesoverlay_axesoverlay_project",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay_axesoverlay_oncanvasclick",
+      "target": "js_modules_model3d_viewer_axesoverlay_axesoverlay_snaptoaxis",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay_axesoverlay_snaptoaxis",
+      "target": "js_modules_model3d_viewer_axesoverlay_axesoverlay_animatecamera",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_axesoverlay_axesoverlay_update",
+      "target": "js_modules_model3d_viewer_axesoverlay_axesoverlay_project",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/AxesOverlay.js",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_bombuilder3d",
+      "target": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/BomBuilder3D.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d",
+      "target": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/BomBuilder3D.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d",
+      "target": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d_build",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/BomBuilder3D.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d",
+      "target": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d_buildrecursive",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/BomBuilder3D.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d_build",
+      "target": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d_buildrecursive",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/BomBuilder3D.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_cameraanimator",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_cameraanimator",
+      "target": "js_modules_model3d_viewer_cameraanimator_cameraanimator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_cameraanimator_cameraanimator",
+      "target": "js_modules_model3d_viewer_cameraanimator_cameraanimator_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_cameraanimator_cameraanimator",
+      "target": "js_modules_model3d_viewer_cameraanimator_cameraanimator_setdefaultzoom",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_cameraanimator_cameraanimator",
+      "target": "js_modules_model3d_viewer_cameraanimator_cameraanimator_setmodelsize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_cameraanimator_cameraanimator",
+      "target": "js_modules_model3d_viewer_cameraanimator_cameraanimator_focuscomponent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_cameraanimator_cameraanimator",
+      "target": "js_modules_model3d_viewer_cameraanimator_cameraanimator_animateto",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_cameraanimator_cameraanimator",
+      "target": "js_modules_model3d_viewer_cameraanimator_cameraanimator_clearfocus",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_cameraanimator_cameraanimator_focuscomponent",
+      "target": "js_modules_model3d_viewer_cameraanimator_cameraanimator_animateto",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_cameraanimator_cameraanimator_clearfocus",
+      "target": "js_modules_model3d_viewer_cameraanimator_cameraanimator_animateto",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/CameraAnimator.js",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_glbloader",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_glbloader",
+      "target": "ref_three_examples_jsm_loaders_gltfloader_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_glbloader",
+      "target": "js_modules_model3d_viewer_glbloader_glbloader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_glbloader_glbloader",
+      "target": "js_modules_model3d_viewer_glbloader_glbloader_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_glbloader_glbloader",
+      "target": "js_modules_model3d_viewer_glbloader_glbloader_load",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_glbloader_glbloader",
+      "target": "js_modules_model3d_viewer_glbloader_glbloader_applyfrontside",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_glbloader_glbloader",
+      "target": "js_modules_model3d_viewer_glbloader_glbloader_applytranslucency",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_glbloader_glbloader_load",
+      "target": "js_modules_model3d_viewer_glbloader_glbloader_applyfrontside",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_glbloader_glbloader_load",
+      "target": "js_modules_model3d_viewer_glbloader_glbloader_applytranslucency",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/GLBLoader.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_highlightmanager3d",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_highlightmanager3d",
+      "target": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d",
+      "target": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d",
+      "target": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_highlightreferences",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d",
+      "target": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_highlightmeshes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d",
+      "target": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_clearhighlight",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d",
+      "target": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_applyhighlightmaterial",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d",
+      "target": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_restorematerial",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_highlightreferences",
+      "target": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_clearhighlight",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_highlightreferences",
+      "target": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_highlightmeshes",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_highlightmeshes",
+      "target": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_applyhighlightmaterial",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/HighlightManager3D.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_modelindex3d",
+      "target": "js_modules_model3d_viewer_modelindex3d_modelindex3d",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ModelIndex3D.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_modelindex3d_modelindex3d",
+      "target": "js_modules_model3d_viewer_modelindex3d_modelindex3d_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ModelIndex3D.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_modelindex3d_modelindex3d",
+      "target": "js_modules_model3d_viewer_modelindex3d_modelindex3d_build",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ModelIndex3D.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_modelindex3d_modelindex3d",
+      "target": "js_modules_model3d_viewer_modelindex3d_modelindex3d_findbyname",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ModelIndex3D.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_modelindex3d_modelindex3d",
+      "target": "js_modules_model3d_viewer_modelindex3d_modelindex3d_findbyuuid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ModelIndex3D.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_modelindex3d_modelindex3d",
+      "target": "js_modules_model3d_viewer_modelindex3d_modelindex3d_findbynamepattern",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ModelIndex3D.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_referenceindex3d",
+      "target": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "target": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "target": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_buildfromcomponents",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "target": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_build",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "target": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_buildrecursive",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "target": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_extractreference",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "target": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_getreferences",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "target": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_getallreferences",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "target": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_getmeshesbyreferences",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_build",
+      "target": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_buildrecursive",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/ReferenceIndex3D.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_selectionmanager3d",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_selectionmanager3d",
+      "target": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d",
+      "target": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d",
+      "target": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_onpointerdown",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d",
+      "target": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_onpointerup",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d",
+      "target": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_bindevents",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d",
+      "target": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_dispose",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/SelectionManager3D.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "ref_three_examples_jsm_controls_trackballcontrols_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "ref_three_examples_jsm_loaders_rgbeloader_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_referenceindex3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_modelindex3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_modelindex3d_modelindex3d",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_highlightmanager3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_bombuilder3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_glbloader",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_glbloader_glbloader",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_cameraanimator",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_cameraanimator_cameraanimator",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_selectionmanager3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_core_eventbus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_loadhdr",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_loadmodel",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_collectnonbommeshes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L158",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_createextrapartsbutton",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L189",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_createhomebutton",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L213",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_resettohome",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L226",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_fitcameratomodel",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L310",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_highlightcomponent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L360",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_clearhighlight",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L365",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_focuscomponent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L370",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_onresize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L379",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_animate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L401",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_destroy",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L417",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d_init",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_onresize",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d_init",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_loadhdr",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d_init",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_animate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d_loadmodel",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_fitcameratomodel",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d_loadmodel",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_collectnonbommeshes",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d_loadmodel",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_createextrapartsbutton",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L153",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d_loadmodel",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_createhomebutton",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d_createhomebutton",
+      "target": "js_modules_model3d_viewer_viewer3d_viewer3d_resettohome",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L222",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "ref_three_examples_jsm_controls_trackballcontrols_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "ref_three_examples_jsm_loaders_rgbeloader_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_referenceindex3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_modelindex3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_modelindex3d_modelindex3d",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_highlightmanager3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_bombuilder3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_bombuilder3d_bombuilder3d",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_glbloader",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_glbloader_glbloader",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_cameraanimator",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_cameraanimator_cameraanimator",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_selectionmanager3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_core_eventbus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_loadhdr",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_loadmodel",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L120",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_collectnonbommeshes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_createextrapartsbutton",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L185",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_fitcameratomodel",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L211",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_highlightcomponent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L255",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_clearhighlight",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L260",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_focuscomponent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L265",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_onresize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L274",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_animate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L296",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_destroy",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L306",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_init",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_onresize",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_init",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_loadhdr",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_init",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_animate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_loadmodel",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_fitcameratomodel",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_loadmodel",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_collectnonbommeshes",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L148",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_loadmodel",
+      "target": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_createextrapartsbutton",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composeradapter",
+      "target": "js_modules_svg_composerlookup",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerAdapter.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composeradapter",
+      "target": "js_modules_svg_composerlookup_composerlookup",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerAdapter.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composeradapter",
+      "target": "js_core_eventbus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerAdapter.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composeradapter",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerAdapter.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composeradapter",
+      "target": "js_modules_svg_composeradapter_composeradapter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerAdapter.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerevents",
+      "target": "js_core_selectionstate",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerEvents.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerevents",
+      "target": "js_core_selectionstate_selectionstate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerEvents.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerevents",
+      "target": "js_service_highlightservice",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerEvents.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerevents",
+      "target": "js_service_highlightservice_highlightservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerEvents.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerevents",
+      "target": "js_core_eventbus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerEvents.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerevents",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerEvents.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerevents",
+      "target": "js_modules_svg_svginspector",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerEvents.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerevents",
+      "target": "js_modules_svg_svginspector_svginspector",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerEvents.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerevents",
+      "target": "js_modules_svg_composerevents_composerevents",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerEvents.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerlookup",
+      "target": "js_modules_svg_composerevents",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerLookup.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerlookup",
+      "target": "js_modules_svg_composerevents_composerevents",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerLookup.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerlookup",
+      "target": "js_service_highlightservice",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerLookup.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerlookup",
+      "target": "js_service_highlightservice_highlightservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerLookup.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerlookup",
+      "target": "js_core_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerLookup.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerlookup",
+      "target": "js_core_app_sdtd",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerLookup.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerlookup",
+      "target": "js_core_eventbus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerLookup.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerlookup",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerLookup.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_composerlookup",
+      "target": "js_modules_svg_composerlookup_composerlookup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/composerLookup.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_svg",
+      "target": "js_core_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/svg.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_svg",
+      "target": "js_core_app_sdtd",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/svg.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_svg",
+      "target": "js_modules_svg_composeradapter",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/svg.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_svg",
+      "target": "js_modules_svg_composeradapter_composeradapter",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/svg.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_svg",
+      "target": "js_modules_svg_svgpanzoom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/svg.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_svg",
+      "target": "js_modules_svg_svgpanzoom_svgpanzoom",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/svg.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_svg",
+      "target": "js_modules_svg_svg_svgmodule",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/svg.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_svginspector",
+      "target": "js_modules_svg_svginspector_svginspector",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/svgInspector.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_svg_svgpanzoom",
+      "target": "js_modules_svg_svgpanzoom_svgpanzoom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/modules/svg/svgPanZoom.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_documentservice",
+      "target": "js_core_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/documentService.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_documentservice",
+      "target": "js_core_app_sdtd",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/documentService.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_documentservice",
+      "target": "js_core_datamanager",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/documentService.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_documentservice",
+      "target": "js_core_datamanager_datamanager",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/documentService.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_documentservice",
+      "target": "js_service_documentservice_documentservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/documentService.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_highlightservice",
+      "target": "js_core_eventbus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/highlightService.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_highlightservice",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/highlightService.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_highlightservice",
+      "target": "js_modules_svg_composeradapter",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/highlightService.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_highlightservice",
+      "target": "js_modules_svg_composeradapter_composeradapter",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/highlightService.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_highlightservice",
+      "target": "js_modules_model3d_model3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/highlightService.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_highlightservice",
+      "target": "js_modules_model3d_model3d_model3dmodule",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/highlightService.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_highlightservice",
+      "target": "js_ui_bom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/highlightService.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_highlightservice",
+      "target": "js_ui_bom_bom",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/highlightService.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_highlightservice",
+      "target": "js_service_highlightservice_highlightservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/highlightService.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_historyservice",
+      "target": "js_core_eventbus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/historyService.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_historyservice",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/historyService.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_historyservice",
+      "target": "js_service_historyservice_historyservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/historyService.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_navigationservice",
+      "target": "js_core_eventbus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_navigationservice",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_navigationservice",
+      "target": "js_core_componentmanager",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_navigationservice",
+      "target": "js_core_componentmanager_componentmanager",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_navigationservice",
+      "target": "js_ui_panel",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_navigationservice",
+      "target": "js_ui_panel_panel",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_navigationservice",
+      "target": "js_ui_bom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_navigationservice",
+      "target": "js_ui_bom_bom",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_navigationservice",
+      "target": "js_modules_svg_composeradapter",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_navigationservice",
+      "target": "js_modules_svg_composeradapter_composeradapter",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_navigationservice",
+      "target": "js_modules_model3d_model3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_navigationservice",
+      "target": "js_modules_model3d_model3d_model3dmodule",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_navigationservice",
+      "target": "js_service_navigationservice_navigationservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/navigationService.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_synchronizationservice",
+      "target": "js_core_eventbus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/synchronizationService.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_synchronizationservice",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/synchronizationService.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_service_synchronizationservice",
+      "target": "js_service_synchronizationservice_synchronizationservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/service/synchronizationService.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_bom",
+      "target": "js_core_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/bom.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_bom",
+      "target": "js_core_app_sdtd",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/bom.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_bom",
+      "target": "js_core_componentmanager",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/bom.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_bom",
+      "target": "js_core_componentmanager_componentmanager",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/bom.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_bom",
+      "target": "js_core_eventbus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/bom.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_bom",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/bom.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_bom",
+      "target": "js_service_highlightservice",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/bom.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_bom",
+      "target": "js_service_highlightservice_highlightservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/bom.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_bom",
+      "target": "js_ui_panel",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/bom.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_bom",
+      "target": "js_ui_panel_panel",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/bom.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_bom",
+      "target": "js_ui_bom_bom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/bom.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_panel",
+      "target": "js_core_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/panel.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_panel",
+      "target": "js_core_app_sdtd",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/panel.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_panel",
+      "target": "js_core_datamanager",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/panel.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_panel",
+      "target": "js_core_datamanager_datamanager",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/panel.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_panel",
+      "target": "js_ui_bom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/panel.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_panel",
+      "target": "js_ui_bom_bom",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/panel.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_panel",
+      "target": "js_ui_panel_panel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/panel.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_selectionmanager",
+      "target": "js_core_componentmanager",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/selectionManager.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_selectionmanager",
+      "target": "js_core_componentmanager_componentmanager",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/selectionManager.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_selectionmanager",
+      "target": "js_core_eventbus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/selectionManager.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_selectionmanager",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/selectionManager.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_selectionmanager",
+      "target": "js_ui_selectionmanager_selectionmanager",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/selectionManager.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_ui",
+      "target": "js_core_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/ui.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_ui",
+      "target": "js_core_app_sdtd",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/ui.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_ui",
+      "target": "js_ui_ui_ui",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/ui.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_workspace",
+      "target": "js_core_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/workspace.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_workspace",
+      "target": "js_core_app_sdtd",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/workspace.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_workspace",
+      "target": "js_modules_svg_svg",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/workspace.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_workspace",
+      "target": "js_modules_svg_svg_svgmodule",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/workspace.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_workspace",
+      "target": "js_modules_model3d_model3d",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/workspace.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_workspace",
+      "target": "js_modules_model3d_model3d_model3dmodule",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/workspace.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_workspace",
+      "target": "js_modules_documents_documents",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/workspace.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_workspace",
+      "target": "js_modules_documents_documents_documentsmodule",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/workspace.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_ui_workspace",
+      "target": "js_ui_workspace_workspace",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/ui/workspace.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_adapters_exceladapter",
+      "target": "pipeline_adapters_exceladapter_exceladapter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/adapters/excelAdapter.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_adapters_svgsourceadapter",
+      "target": "pipeline_adapters_svgsourceadapter_svgsourceadapter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/adapters/svgSourceAdapter.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_generator",
+      "target": "pipeline_generator_generator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/generator.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_xlsx_full_min",
+      "target": "pipeline_xlsx_full_min_make_xlsx_lib",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/xlsx.full.min.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "resources_analyze",
+      "target": "pygltflib",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "resources/analyze.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "resources_analyze",
+      "target": "openpyxl",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "resources/analyze.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_analyze",
+      "target": "pygltflib",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/analyze.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_analyze",
+      "target": "openpyxl",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/analyze.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_analyze_dof",
+      "target": "pygltflib",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/analyze_dof.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_analyze_dof",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/analyze_dof.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_analyze_dof",
+      "target": "scripts_analyze_dof_get_transform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/analyze_dof.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_analyze_dof",
+      "target": "scripts_analyze_dof_print_node",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/analyze_dof.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_analyze_dof_print_node",
+      "target": "scripts_analyze_dof_get_transform",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/analyze_dof.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_analyze_dof_rationale_61",
+      "target": "scripts_analyze_dof_get_transform",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/analyze_dof.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_check_glb",
+      "target": "pygltflib",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_glb.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_check_glb",
+      "target": "scripts_check_glb_has_geometry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_glb.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_export_bom",
+      "target": "openpyxl",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export_bom.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_export_bom",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export_bom.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_export_bom",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export_bom.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_export_bom",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export_bom.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_export_bom",
+      "target": "scripts_export_bom_export_bom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export_bom.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_watch_bom",
+      "target": "time",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/watch_bom.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_watch_bom",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/watch_bom.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "scripts_watch_bom",
+      "target": "subprocess",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/watch_bom.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d_resettohome",
+      "target": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_onpointerup",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L290",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d_resettohome",
+      "target": "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_onpointerdown",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L300",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_viewer3d_createextrapartsbutton",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "js/modules/model3d/viewer/Viewer3D.js",
+      "source_location": "L205",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_createextrapartsbutton",
+      "target": "js_core_eventbus_eventbus",
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "js/modules/model3d/viewer/Viewer3D_legacy.js",
+      "source_location": "L201",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

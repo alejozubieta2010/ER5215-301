@@ -16,7 +16,7 @@ export class GLBLoader {
                 (gltf) => {
                     this.modelRoot = gltf.scene;
 
-                    this.modelRoot.rotation.x = -Math.PI / 2;
+                    this.modelRoot.rotation.set(Math.PI / 2, 0, Math.PI);
 
                     this.applyFrontSide(this.modelRoot);
 

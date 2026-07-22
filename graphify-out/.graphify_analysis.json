@@ -1,0 +1,596 @@
+{
+  "communities": {
+    "0": [
+      "js_modules_model3d_viewer_bombuilder3d",
+      "js_modules_model3d_viewer_bombuilder3d_bombuilder3d",
+      "js_modules_model3d_viewer_bombuilder3d_bombuilder3d_build",
+      "js_modules_model3d_viewer_bombuilder3d_bombuilder3d_buildrecursive",
+      "js_modules_model3d_viewer_bombuilder3d_bombuilder3d_constructor",
+      "js_modules_model3d_viewer_cameraanimator",
+      "js_modules_model3d_viewer_cameraanimator_cameraanimator",
+      "js_modules_model3d_viewer_cameraanimator_cameraanimator_animateto",
+      "js_modules_model3d_viewer_cameraanimator_cameraanimator_clearfocus",
+      "js_modules_model3d_viewer_cameraanimator_cameraanimator_constructor",
+      "js_modules_model3d_viewer_cameraanimator_cameraanimator_focuscomponent",
+      "js_modules_model3d_viewer_cameraanimator_cameraanimator_setdefaultzoom",
+      "js_modules_model3d_viewer_cameraanimator_cameraanimator_setmodelsize",
+      "js_modules_model3d_viewer_glbloader",
+      "js_modules_model3d_viewer_glbloader_glbloader",
+      "js_modules_model3d_viewer_glbloader_glbloader_applyfrontside",
+      "js_modules_model3d_viewer_glbloader_glbloader_applytranslucency",
+      "js_modules_model3d_viewer_glbloader_glbloader_constructor",
+      "js_modules_model3d_viewer_glbloader_glbloader_load",
+      "js_modules_model3d_viewer_highlightmanager3d",
+      "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d",
+      "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_applyhighlightmaterial",
+      "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_clearhighlight",
+      "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_constructor",
+      "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_highlightmeshes",
+      "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_highlightreferences",
+      "js_modules_model3d_viewer_highlightmanager3d_highlightmanager3d_restorematerial",
+      "js_modules_model3d_viewer_modelindex3d",
+      "js_modules_model3d_viewer_modelindex3d_modelindex3d",
+      "js_modules_model3d_viewer_modelindex3d_modelindex3d_build",
+      "js_modules_model3d_viewer_modelindex3d_modelindex3d_constructor",
+      "js_modules_model3d_viewer_modelindex3d_modelindex3d_findbyname",
+      "js_modules_model3d_viewer_modelindex3d_modelindex3d_findbynamepattern",
+      "js_modules_model3d_viewer_modelindex3d_modelindex3d_findbyuuid",
+      "js_modules_model3d_viewer_referenceindex3d",
+      "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_build",
+      "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_buildfromcomponents",
+      "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_buildrecursive",
+      "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_constructor",
+      "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_extractreference",
+      "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_getallreferences",
+      "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_getmeshesbyreferences",
+      "js_modules_model3d_viewer_referenceindex3d_referenceindex3d_getreferences",
+      "js_modules_model3d_viewer_selectionmanager3d",
+      "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d",
+      "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_bindevents",
+      "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_constructor",
+      "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_dispose",
+      "js_modules_model3d_viewer_viewer3d",
+      "js_modules_model3d_viewer_viewer3d_legacy"
+    ],
+    "1": [
+      "js_core_app",
+      "js_core_app_sdtd",
+      "js_core_componentmanager",
+      "js_core_componentmanager_componentmanager",
+      "js_core_datamanager",
+      "js_core_datamanager_datamanager",
+      "js_core_engine",
+      "js_core_engine_engine",
+      "js_core_eventbus",
+      "js_core_eventbus_eventbus",
+      "js_core_modulemanager",
+      "js_core_modulemanager_modulemanager",
+      "js_core_selectionstate",
+      "js_core_selectionstate_selectionstate",
+      "js_modules_documents_documents",
+      "js_modules_documents_documents_documentsmodule",
+      "js_modules_model3d_model3d",
+      "js_modules_model3d_model3d_model3dmodule",
+      "js_modules_svg_composeradapter",
+      "js_modules_svg_composeradapter_composeradapter",
+      "js_modules_svg_composerevents",
+      "js_modules_svg_composerevents_composerevents",
+      "js_modules_svg_composerlookup",
+      "js_modules_svg_composerlookup_composerlookup",
+      "js_modules_svg_svg",
+      "js_modules_svg_svg_svgmodule",
+      "js_modules_svg_svginspector",
+      "js_modules_svg_svginspector_svginspector",
+      "js_modules_svg_svgpanzoom",
+      "js_modules_svg_svgpanzoom_svgpanzoom",
+      "js_service_documentservice",
+      "js_service_documentservice_documentservice",
+      "js_service_highlightservice",
+      "js_service_highlightservice_highlightservice",
+      "js_service_historyservice",
+      "js_service_historyservice_historyservice",
+      "js_service_navigationservice",
+      "js_service_navigationservice_navigationservice",
+      "js_service_synchronizationservice",
+      "js_service_synchronizationservice_synchronizationservice",
+      "js_ui_bom",
+      "js_ui_bom_bom",
+      "js_ui_panel",
+      "js_ui_panel_panel",
+      "js_ui_selectionmanager",
+      "js_ui_selectionmanager_selectionmanager",
+      "js_ui_ui",
+      "js_ui_ui_ui",
+      "js_ui_workspace",
+      "js_ui_workspace_workspace"
+    ],
+    "2": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_app_js",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_bom_ui",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_component_manager",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_composer_events",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_composer_lookup",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_data_manager",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_documents_module",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_engine",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_event_bus",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_highlight_service",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_history_service",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_model3d_module",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_module_manager",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_navigation_service",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_panel_ui",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_selection_manager",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_selection_state",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_svg_composer_adapter",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_svg_module",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_synchronization_service",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_workspace_ui"
+    ],
+    "3": [
+      "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_onpointerdown",
+      "js_modules_model3d_viewer_selectionmanager3d_selectionmanager3d_onpointerup",
+      "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_animate",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_clearhighlight",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_collectnonbommeshes",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_constructor",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_createextrapartsbutton",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_createhomebutton",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_destroy",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_fitcameratomodel",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_focuscomponent",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_highlightcomponent",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_init",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_loadhdr",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_loadmodel",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_onresize",
+      "js_modules_model3d_viewer_viewer3d_viewer3d_resettohome"
+    ],
+    "4": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_glb_77_level1_nodes",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_glb_node_name_nauo",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_21_of_24_matched",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_2_step_only_parts",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_3_excel_only_parts",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_77_level1_isomorphism",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_excel_crossover_step",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_glb_extraction_step",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_isomorphism_linkage_step",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_linkage_script",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_nauo_entity",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_openpyxl",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_product_definition",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_pygltflib",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_step_extraction_step",
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_step_iso_10303_21"
+    ],
+    "5": [
+      "er5215_301_dev_docs_auditoria_step_er5215_301_md",
+      "er5215_301_dev_docs_auditoria_step_er5215_301_md_author_zubietam",
+      "er5215_301_dev_docs_auditoria_step_er5215_301_md_autodesk_inventor_2022",
+      "er5215_301_dev_docs_auditoria_step_er5215_301_md_automotive_design_schema",
+      "er5215_301_dev_docs_auditoria_step_er5215_301_md_bom_175_items",
+      "er5215_301_dev_docs_auditoria_tecnica_catalogo_piezas_md",
+      "er5215_301_dev_docs_auditoria_tecnica_catalogo_piezas_md_1185_nodes_1152_meshes",
+      "er5215_301_dev_docs_auditoria_tecnica_catalogo_piezas_md_bom_172_parts",
+      "er5215_301_dev_docs_auditoria_tecnica_catalogo_piezas_md_category_a_special_engineering",
+      "er5215_301_dev_docs_auditoria_tecnica_catalogo_piezas_md_category_b_commercial",
+      "er5215_301_dev_docs_auditoria_tecnica_catalogo_piezas_md_category_c_hardware",
+      "er5215_301_dev_docs_auditoria_tecnica_catalogo_piezas_md_python_bom_extraction",
+      "er5215_301_dev_docs_plan_integracion_3d_md",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_md",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md"
+    ],
+    "6": [
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_animate",
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_clearhighlight",
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_collectnonbommeshes",
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_constructor",
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_createextrapartsbutton",
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_destroy",
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_fitcameratomodel",
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_focuscomponent",
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_highlightcomponent",
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_init",
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_loadhdr",
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_loadmodel",
+      "js_modules_model3d_viewer_viewer3d_legacy_viewer3d_onresize"
+    ],
+    "7": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_md_bom",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_md_components_json_pipeline",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_md_edrawings_viewer",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_md_ehoops_communicator",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_md_human_workflow",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_md_rad_equipement",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_md_sdtd_platform",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_md_solidworks_composer",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_md_step_cad_file",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_md_template_model",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_eraser5215_301_pilot",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_export_bom_py",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_watch_bom_py"
+    ],
+    "8": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_bom_builder_3d",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_camera_animator",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_glb_loader",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_highlight_manager_3d",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_mesh_overrides_json",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_model3d_adapter",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_model_index_3d",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_orbit_controls",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_orthographic_camera",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_reference_index_3d",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_selection_manager_3d",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_viewer3d_orchestrator"
+    ],
+    "9": [
+      "er5215_301_dev_resources_guia_correlacion_bom_glb_md",
+      "er5215_301_dev_resources_guia_correlacion_bom_glb_md_bom_extraction_step",
+      "er5215_301_dev_resources_guia_correlacion_bom_glb_md_comparison_step",
+      "er5215_301_dev_resources_guia_correlacion_bom_glb_md_discrepancy_detection",
+      "er5215_301_dev_resources_guia_correlacion_bom_glb_md_glb_hierarchy_step",
+      "er5215_301_dev_resources_guia_correlacion_bom_glb_md_interpretation_step",
+      "er5215_301_dev_resources_guia_correlacion_bom_glb_md_only_in_bom_analysis",
+      "er5215_301_dev_resources_guia_correlacion_bom_glb_md_only_in_glb_analysis",
+      "er5215_301_dev_resources_guia_correlacion_bom_glb_md_openpyxl",
+      "er5215_301_dev_resources_guia_correlacion_bom_glb_md_pygltflib",
+      "er5215_301_dev_resources_guia_correlacion_bom_glb_md_python_script"
+    ],
+    "10": [
+      "js_modules_model3d_viewer_axesoverlay",
+      "js_modules_model3d_viewer_axesoverlay_axesoverlay",
+      "js_modules_model3d_viewer_axesoverlay_axesoverlay_animatecamera",
+      "js_modules_model3d_viewer_axesoverlay_axesoverlay_constructor",
+      "js_modules_model3d_viewer_axesoverlay_axesoverlay_create",
+      "js_modules_model3d_viewer_axesoverlay_axesoverlay_dispose",
+      "js_modules_model3d_viewer_axesoverlay_axesoverlay_oncanvasclick",
+      "js_modules_model3d_viewer_axesoverlay_axesoverlay_project",
+      "js_modules_model3d_viewer_axesoverlay_axesoverlay_snaptoaxis",
+      "js_modules_model3d_viewer_axesoverlay_axesoverlay_update"
+    ],
+    "11": [
+      "er5215_301_dev_index_html",
+      "er5215_301_dev_index_html_app_entry",
+      "er5215_301_dev_index_html_bom_container",
+      "er5215_301_dev_index_html_importmap_three",
+      "er5215_301_dev_index_html_quote_modal",
+      "er5215_301_dev_index_html_viewer_3d_container"
+    ],
+    "12": [
+      "er5215-301_dev_images_logo_png",
+      "er5215-301_dev_resources_svg_er5215-301_files_ba9ed78fc0e50eb6_image_0_jpg",
+      "resources_images_er5215_301_dev_resources_images_er5215_301_png",
+      "resources_svg_er5215_301_dev_resources_svg_er5215_301_svg"
+    ],
+    "13": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_bom_intersection_filter_rationale",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_components_json_24",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_svg_components_set",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_svg_hotspots_21"
+    ],
+    "14": [
+      "er5215_301_dev_pipeline_generator_html",
+      "er5215_301_dev_pipeline_generator_html_excel_adapter",
+      "er5215_301_dev_pipeline_generator_html_sheetjs",
+      "er5215_301_dev_pipeline_generator_html_svg_source_adapter"
+    ],
+    "15": [
+      "scripts_analyze_dof",
+      "scripts_analyze_dof_get_transform",
+      "scripts_analyze_dof_print_node",
+      "scripts_analyze_dof_rationale_61"
+    ],
+    "16": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_graphify_135_nodes_240_edges",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_graphify_validation",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_graphify_159_nodes_255_edges"
+    ],
+    "17": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_feature_event_bus_branch",
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_git_repo"
+    ],
+    "18": [
+      "pipeline_adapters_exceladapter",
+      "pipeline_adapters_exceladapter_exceladapter"
+    ],
+    "19": [
+      "pipeline_adapters_svgsourceadapter",
+      "pipeline_adapters_svgsourceadapter_svgsourceadapter"
+    ],
+    "20": [
+      "pipeline_generator",
+      "pipeline_generator_generator"
+    ],
+    "21": [
+      "pipeline_xlsx_full_min",
+      "pipeline_xlsx_full_min_make_xlsx_lib"
+    ],
+    "22": [
+      "scripts_check_glb",
+      "scripts_check_glb_has_geometry"
+    ],
+    "23": [
+      "scripts_export_bom",
+      "scripts_export_bom_export_bom"
+    ],
+    "24": [
+      "er5215_301_dev_changelog_md"
+    ],
+    "25": [
+      "er5215_301_dev_docs_arquitectura_txt"
+    ],
+    "26": [
+      "er5215_301_dev_docs_plan_integracion_3d_md_iframe_postmessage_strategy"
+    ],
+    "27": [
+      "er5215_301_dev_docs_plan_integracion_3d_md_model3d_module_bridge"
+    ],
+    "28": [
+      "er5215_301_dev_docs_plan_integracion_3d_md_postmessage_protocol"
+    ],
+    "29": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_md_composer_hotspot_onmousemove"
+    ],
+    "30": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_md_copy_per_project_model"
+    ],
+    "31": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_document_service"
+    ],
+    "32": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_es6_module_refactor"
+    ],
+    "33": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_event_bus_phase2"
+    ],
+    "34": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_formspree_modal_quote"
+    ],
+    "35": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_svg_inspector"
+    ],
+    "36": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_bom_intersection_filter"
+    ],
+    "37": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_bom_watcher_3s"
+    ],
+    "38": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_bom_watcher_rationale"
+    ],
+    "39": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_es_module_direct_3d"
+    ],
+    "40": [
+      "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_formspree_endpoint"
+    ],
+    "41": [
+      "er5215_301_dev_resources_guia_correlacion_bom_glb_md_structural_isomorphism"
+    ],
+    "42": [
+      "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md_step_as_link"
+    ],
+    "43": [
+      "er5215_301_dev_resources_pdf_t2s54fam101182t19_5_pdf"
+    ],
+    "44": [
+      "graphify_out_memory_query_20260716_123720_why_does_sdtd_human_workflow_connect_project_overv_md"
+    ],
+    "45": [
+      "resources_analyze"
+    ],
+    "46": [
+      "resources_svg_er5215_301_dev_resources_svg_er5215_301_pdf"
+    ],
+    "47": [
+      "scripts_analyze"
+    ],
+    "48": [
+      "scripts_watch_bom"
+    ]
+  },
+  "cohesion": {
+    "0": 0.06196078431372549,
+    "1": 0.12571428571428572,
+    "2": 0.21904761904761905,
+    "3": 0.16339869281045752,
+    "4": 0.11764705882352941,
+    "5": 0.125,
+    "6": 0.2087912087912088,
+    "7": 0.23076923076923078,
+    "8": 0.18181818181818182,
+    "9": 0.18181818181818182,
+    "10": 0.28888888888888886,
+    "11": 0.3333333333333333,
+    "12": 0.5,
+    "13": 0.5,
+    "14": 0.5,
+    "15": 0.6666666666666666,
+    "16": 0.6666666666666666,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0
+  },
+  "gods": [
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_viewer3d",
+      "label": "Viewer3D",
+      "degree": 17
+    },
+    {
+      "id": "js_core_eventbus_eventbus",
+      "label": "EventBus",
+      "degree": 15
+    },
+    {
+      "id": "js_modules_model3d_viewer_viewer3d_legacy_viewer3d",
+      "label": "Viewer3D",
+      "degree": 14
+    },
+    {
+      "id": "js_core_app_sdtd",
+      "label": "SDTD",
+      "degree": 13
+    },
+    {
+      "id": "er5215_301_dev_resources_guia_vinculacion_step_glb_excel_md",
+      "label": "Guia Vinculacion STEP GLB EXCEL",
+      "degree": 12
+    },
+    {
+      "id": "js_modules_model3d_viewer_referenceindex3d_referenceindex3d",
+      "label": "ReferenceIndex3D",
+      "degree": 11
+    },
+    {
+      "id": "er5215_301_dev_docs_resumen_proyecto_sdtd_v4_md_viewer3d_orchestrator",
+      "label": "Viewer3D Orchestrator",
+      "degree": 10
+    },
+    {
+      "id": "er5215_301_dev_docs_resumen_proyecto_sdtd_v2_md_selection_manager",
+      "label": "SelectionManager",
+      "degree": 10
+    },
+    {
+      "id": "js_modules_model3d_viewer_axesoverlay_axesoverlay",
+      "label": "AxesOverlay",
+      "degree": 9
+    },
+    {
+      "id": "js_modules_model3d_viewer_cameraanimator_cameraanimator",
+      "label": "CameraAnimator",
+      "degree": 9
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Project Logo",
+      "target": "ER5215-301 Technical Drawing (PNG)",
+      "source_files": [
+        "images/logo.png",
+        "resources/images/ER5215-301.png"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "GLB 77 Level-1 Named Nodes",
+      "target": "77 Level-1 Isomorphism STEP GLB",
+      "source_files": [
+        "docs/RESUMEN_PROYECTO_SDTD_v4.md",
+        "resources/Guia_Vinculacion_STEP_GLB_EXCEL.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "shares_data_with",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "GLB Node Name NAUO# Problem",
+      "target": "NEXT_ASSEMBLY_USAGE_OCCURRENCE (NAUO)",
+      "source_files": [
+        "docs/RESUMEN_PROYECTO_SDTD_v4.md",
+        "resources/Guia_Vinculacion_STEP_GLB_EXCEL.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "conceptually_related_to",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "Graph After 3D Integration: 159 Nodes 255 Edges",
+      "target": "Graph After ES6 Refactor: 135 Nodes 240 Edges",
+      "source_files": [
+        "docs/RESUMEN_PROYECTO_SDTD_v4.md",
+        "docs/RESUMEN_PROYECTO_SDTD_v2.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "SelectionManager3D",
+      "target": "EventBus (pub/sub)",
+      "source_files": [
+        "docs/RESUMEN_PROYECTO_SDTD_v4.md",
+        "docs/RESUMEN_PROYECTO_SDTD_v2.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Viewer3D` connect `Community 3` to `Community 0`, `Community 1`?",
+      "why": "High betweenness centrality (0.039) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `EventBus` connect `Community 1` to `Community 0`, `Community 3`, `Community 6`?",
+      "why": "High betweenness centrality (0.037) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Viewer3D` connect `Community 6` to `Community 0`?",
+      "why": "High betweenness centrality (0.033) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `DocumentService`, `ExcelAdapter`, `SvgSourceAdapter` to the rest of the system?",
+      "why": "71 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06196078431372549 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.12571428571428572 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 4` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

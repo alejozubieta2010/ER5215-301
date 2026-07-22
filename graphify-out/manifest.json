@@ -1,0 +1,357 @@
+{
+  "graphify-out/converted/ER5215-301_60458545.md": {
+    "mtime": 1784641056.6260731,
+    "ast_hash": "6d2ba42b54cb3145b2228ee48fa93129",
+    "semantic_hash": "6d2ba42b54cb3145b2228ee48fa93129"
+  },
+  "graphify-out/converted/ER5215-301_df21b506.md": {
+    "mtime": 1784689891.181098,
+    "ast_hash": "39dabf57d5c37ef0fb553aa407af4a10",
+    "semantic_hash": "39dabf57d5c37ef0fb553aa407af4a10"
+  },
+  "config.json": {
+    "mtime": 1783473180.161613,
+    "ast_hash": "1e2973e9f78f0c80632cc3165f2edf3a",
+    "semantic_hash": "1e2973e9f78f0c80632cc3165f2edf3a"
+  },
+  "data/client.json": {
+    "mtime": 1784409889.5347364,
+    "ast_hash": "64c8196f70948bba82adcb951f696d36",
+    "semantic_hash": "64c8196f70948bba82adcb951f696d36"
+  },
+  "data/components.json": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "9c1c5dd7af880f4bdd8c2fdb8c918058",
+    "semantic_hash": "9c1c5dd7af880f4bdd8c2fdb8c918058"
+  },
+  "data/documents.json": {
+    "mtime": 1783473180.1977966,
+    "ast_hash": "d751713988987e9331980363e24189ce",
+    "semantic_hash": "d751713988987e9331980363e24189ce"
+  },
+  "data/project.json": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "f3392e1fe76155e01c47b3c2a9e24a3c",
+    "semantic_hash": "f3392e1fe76155e01c47b3c2a9e24a3c"
+  },
+  "js/core/app.js": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "f1d24df8882b764199ee01ea33f52073",
+    "semantic_hash": "f1d24df8882b764199ee01ea33f52073"
+  },
+  "js/core/componentManager.js": {
+    "mtime": 1784409889.5347364,
+    "ast_hash": "086ce4fd57a2e09e1ad94d390a5d5156",
+    "semantic_hash": "086ce4fd57a2e09e1ad94d390a5d5156"
+  },
+  "js/core/dataManager.js": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "34c937429f7c782c28b105df61f48e7b",
+    "semantic_hash": "34c937429f7c782c28b105df61f48e7b"
+  },
+  "js/core/engine.js": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "f070de4bff30a46666fae12b7544fc18",
+    "semantic_hash": "f070de4bff30a46666fae12b7544fc18"
+  },
+  "js/core/eventBus.js": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "0368dce14178cada0a221a975897ff21",
+    "semantic_hash": "0368dce14178cada0a221a975897ff21"
+  },
+  "js/core/moduleManager.js": {
+    "mtime": 1784409889.5503578,
+    "ast_hash": "23811058b2e94e560e8ddbaec9568d12",
+    "semantic_hash": "23811058b2e94e560e8ddbaec9568d12"
+  },
+  "js/core/selectionState.js": {
+    "mtime": 1784409889.5503578,
+    "ast_hash": "92000d34e5afef8189d5c9695ca87efb",
+    "semantic_hash": "92000d34e5afef8189d5c9695ca87efb"
+  },
+  "js/modules/documents/documents.js": {
+    "mtime": 1784409889.5503578,
+    "ast_hash": "9274ce403ac4a4482c1081e9d6dcdba3",
+    "semantic_hash": "9274ce403ac4a4482c1081e9d6dcdba3"
+  },
+  "js/modules/model3d/model3d.js": {
+    "mtime": 1784687996.6173053,
+    "ast_hash": "5eaed93b40bc9286ec0ea62d62b1c81c",
+    "semantic_hash": "5eaed93b40bc9286ec0ea62d62b1c81c"
+  },
+  "js/modules/model3d/viewer/AxesOverlay.js": {
+    "mtime": 1784732744.9990175,
+    "ast_hash": "db8f76ab50188c861b1c9fd7f601ba5e",
+    "semantic_hash": "db8f76ab50188c861b1c9fd7f601ba5e"
+  },
+  "js/modules/model3d/viewer/BomBuilder3D.js": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "7decb39fd681bbae17c69bbe75c61e02",
+    "semantic_hash": "7decb39fd681bbae17c69bbe75c61e02"
+  },
+  "js/modules/model3d/viewer/CameraAnimator.js": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "10dc65ace5aaa02093962e9a6fabd7f5",
+    "semantic_hash": "10dc65ace5aaa02093962e9a6fabd7f5"
+  },
+  "js/modules/model3d/viewer/GLBLoader.js": {
+    "mtime": 1784740516.9993887,
+    "ast_hash": "6e20a2657b8184d638dc0f2855a17390",
+    "semantic_hash": "6e20a2657b8184d638dc0f2855a17390"
+  },
+  "js/modules/model3d/viewer/HighlightManager3D.js": {
+    "mtime": 1784687975.6829495,
+    "ast_hash": "13e6ae47f769d827281c4f0332a7f5ad",
+    "semantic_hash": "13e6ae47f769d827281c4f0332a7f5ad"
+  },
+  "js/modules/model3d/viewer/ModelIndex3D.js": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "050adc9e2031268e857cf687c09bf0a8",
+    "semantic_hash": "050adc9e2031268e857cf687c09bf0a8"
+  },
+  "js/modules/model3d/viewer/ReferenceIndex3D.js": {
+    "mtime": 1784687982.3184335,
+    "ast_hash": "630e2e983cd16300afcae2d0d743fdec",
+    "semantic_hash": "630e2e983cd16300afcae2d0d743fdec"
+  },
+  "js/modules/model3d/viewer/SelectionManager3D.js": {
+    "mtime": 1784687395.6083882,
+    "ast_hash": "8529773f7972e770d95784e3f2ef181b",
+    "semantic_hash": "8529773f7972e770d95784e3f2ef181b"
+  },
+  "js/modules/model3d/viewer/Viewer3D.js": {
+    "mtime": 1784747093.4977655,
+    "ast_hash": "45af27c5d4c20fc04b6c4024d92e2e24",
+    "semantic_hash": "45af27c5d4c20fc04b6c4024d92e2e24"
+  },
+  "js/modules/model3d/viewer/Viewer3D_legacy.js": {
+    "mtime": 1784733258.583778,
+    "ast_hash": "ba96fa98a191e45ae9ac1d5ce272e9d7",
+    "semantic_hash": "ba96fa98a191e45ae9ac1d5ce272e9d7"
+  },
+  "js/modules/svg/composerAdapter.js": {
+    "mtime": 1784645681.4206696,
+    "ast_hash": "0a7d6b15f4dcedf5926f69880ac24e79",
+    "semantic_hash": "0a7d6b15f4dcedf5926f69880ac24e79"
+  },
+  "js/modules/svg/composerEvents.js": {
+    "mtime": 1784645672.5228558,
+    "ast_hash": "28b9fc0b253803e567df2e636a4dcd9d",
+    "semantic_hash": "28b9fc0b253803e567df2e636a4dcd9d"
+  },
+  "js/modules/svg/composerLookup.js": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "4017caaeebcde357c76bfceb4261fe21",
+    "semantic_hash": "4017caaeebcde357c76bfceb4261fe21"
+  },
+  "js/modules/svg/svg.js": {
+    "mtime": 1784645734.3108847,
+    "ast_hash": "98a61d859bdb4c234bc6c67aaf9c2a48",
+    "semantic_hash": "98a61d859bdb4c234bc6c67aaf9c2a48"
+  },
+  "js/modules/svg/svgInspector.js": {
+    "mtime": 1784409889.5503578,
+    "ast_hash": "1afb49495aa171197fb07d41ee29b8da",
+    "semantic_hash": "1afb49495aa171197fb07d41ee29b8da"
+  },
+  "js/modules/svg/svgPanZoom.js": {
+    "mtime": 1784645716.992419,
+    "ast_hash": "e0beae8e48cf96a793ec10a5be0262b9",
+    "semantic_hash": "e0beae8e48cf96a793ec10a5be0262b9"
+  },
+  "js/service/documentService.js": {
+    "mtime": 1784409889.5503578,
+    "ast_hash": "0062f2ce2b1e1a6866c7a6c159ced6fc",
+    "semantic_hash": "0062f2ce2b1e1a6866c7a6c159ced6fc"
+  },
+  "js/service/highlightService.js": {
+    "mtime": 1784644071.0195048,
+    "ast_hash": "01ae0a3f9df46852559590a06aede0d2",
+    "semantic_hash": "01ae0a3f9df46852559590a06aede0d2"
+  },
+  "js/service/historyService.js": {
+    "mtime": 1784644071.0205054,
+    "ast_hash": "3ceb389249be221cef90f126b7ed8599",
+    "semantic_hash": "3ceb389249be221cef90f126b7ed8599"
+  },
+  "js/service/navigationService.js": {
+    "mtime": 1784644071.0205054,
+    "ast_hash": "9e1e89f29c3d2cb570ddf0b7213ebca7",
+    "semantic_hash": "9e1e89f29c3d2cb570ddf0b7213ebca7"
+  },
+  "js/service/synchronizationService.js": {
+    "mtime": 1784644071.0205054,
+    "ast_hash": "d153b705749fe6d117e8cde0124b4cd5",
+    "semantic_hash": "d153b705749fe6d117e8cde0124b4cd5"
+  },
+  "js/ui/bom.js": {
+    "mtime": 1784644071.0205054,
+    "ast_hash": "22f129bfd084840081811a06553e06b8",
+    "semantic_hash": "22f129bfd084840081811a06553e06b8"
+  },
+  "js/ui/panel.js": {
+    "mtime": 1784644071.0205054,
+    "ast_hash": "a9f08fb7ee34e913c7f64fc79da95215",
+    "semantic_hash": "a9f08fb7ee34e913c7f64fc79da95215"
+  },
+  "js/ui/selectionManager.js": {
+    "mtime": 1784644071.0205054,
+    "ast_hash": "45199b1a9596c345a272d52a7b891d9f",
+    "semantic_hash": "45199b1a9596c345a272d52a7b891d9f"
+  },
+  "js/ui/ui.js": {
+    "mtime": 1784409889.5503578,
+    "ast_hash": "9428f57d724a28e606863c069088e7e8",
+    "semantic_hash": "9428f57d724a28e606863c069088e7e8"
+  },
+  "js/ui/workspace.js": {
+    "mtime": 1784644071.0205054,
+    "ast_hash": "84a02c893fa206ede2d7485d602490ba",
+    "semantic_hash": "84a02c893fa206ede2d7485d602490ba"
+  },
+  "pipeline/adapters/excelAdapter.js": {
+    "mtime": 1783596699.8281975,
+    "ast_hash": "8e407848a5a4ba7504c772411ad4e3e4",
+    "semantic_hash": "8e407848a5a4ba7504c772411ad4e3e4"
+  },
+  "pipeline/adapters/svgSourceAdapter.js": {
+    "mtime": 1783937947.3037162,
+    "ast_hash": "c7416de32e5abf6cb26cb4fe5bc83872",
+    "semantic_hash": "c7416de32e5abf6cb26cb4fe5bc83872"
+  },
+  "pipeline/generator.js": {
+    "mtime": 1783937918.2408874,
+    "ast_hash": "a01f2246a7588dea8da0bcea3ec813fa",
+    "semantic_hash": "a01f2246a7588dea8da0bcea3ec813fa"
+  },
+  "pipeline/xlsx.full.min.js": {
+    "mtime": 1783596702.8637435,
+    "ast_hash": "31e9848e80e1ddf43c5aa31009cd2b7b",
+    "semantic_hash": "31e9848e80e1ddf43c5aa31009cd2b7b"
+  },
+  "resources/analyze.py": {
+    "mtime": 1784684201.3370647,
+    "ast_hash": "da5c962049f21c93b68cf6bda120dff6",
+    "semantic_hash": "da5c962049f21c93b68cf6bda120dff6"
+  },
+  "scripts/analyze.py": {
+    "mtime": 1784686614.2679346,
+    "ast_hash": "a052f38d37fa51b0b60adc33b57283ac",
+    "semantic_hash": "a052f38d37fa51b0b60adc33b57283ac"
+  },
+  "scripts/analyze_dof.py": {
+    "mtime": 1784688428.821203,
+    "ast_hash": "36a25b9ad382fc10d1436b7339abec0f",
+    "semantic_hash": "36a25b9ad382fc10d1436b7339abec0f"
+  },
+  "scripts/check_glb.py": {
+    "mtime": 1784687192.3388398,
+    "ast_hash": "685ca5d400dc753fe833ba1c67eed39d",
+    "semantic_hash": "685ca5d400dc753fe833ba1c67eed39d"
+  },
+  "scripts/export_bom.py": {
+    "mtime": 1784644071.4210353,
+    "ast_hash": "b599a07b467dd74b17354e47706d4c92",
+    "semantic_hash": "b599a07b467dd74b17354e47706d4c92"
+  },
+  "scripts/watch_bom.py": {
+    "mtime": 1784644071.4210353,
+    "ast_hash": "f8b62dfa75d17c82bc61b3d6ee1843b9",
+    "semantic_hash": "f8b62dfa75d17c82bc61b3d6ee1843b9"
+  },
+  "CHANGELOG.md": {
+    "mtime": 1784689690.424751,
+    "ast_hash": "174caa0a203466d29d039666fe7a22e9",
+    "semantic_hash": "174caa0a203466d29d039666fe7a22e9"
+  },
+  "docs/ARQUITECTURA.txt": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "0c1d16d12c1867648325fd9e383ab80d",
+    "semantic_hash": "0c1d16d12c1867648325fd9e383ab80d"
+  },
+  "docs/Auditoria_STEP_ER5215-301.md": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "721592a94dc1411dae648f42630f6702",
+    "semantic_hash": "721592a94dc1411dae648f42630f6702"
+  },
+  "docs/Auditoria_Tecnica_Catalogo_Piezas.md": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "b71aa7788e71c4156e180232d5b6b1a5",
+    "semantic_hash": "b71aa7788e71c4156e180232d5b6b1a5"
+  },
+  "docs/PLAN_INTEGRACION_3D.md": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "56f2976cef378b2b64f4f124920f7375",
+    "semantic_hash": "56f2976cef378b2b64f4f124920f7375"
+  },
+  "docs/RESUMEN_PROYECTO_SDTD.md": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "9805070cbc86273a352d1b34a352de61",
+    "semantic_hash": "9805070cbc86273a352d1b34a352de61"
+  },
+  "docs/RESUMEN_PROYECTO_SDTD_v2.md": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "4368097d5a83a98ca12f068a896ebd03",
+    "semantic_hash": "4368097d5a83a98ca12f068a896ebd03"
+  },
+  "docs/RESUMEN_PROYECTO_SDTD_v4.md": {
+    "mtime": 1784644071.0038896,
+    "ast_hash": "86338ddba14330e9b5282ff4b70deab0",
+    "semantic_hash": "86338ddba14330e9b5282ff4b70deab0"
+  },
+  "graphify-out/memory/query_20260716_123720_why_does_sdtd_human_workflow_connect_project_overv.md": {
+    "mtime": 1784205440.4583707,
+    "ast_hash": "3c40299561db26dc3a4218be8fdeb984",
+    "semantic_hash": "3c40299561db26dc3a4218be8fdeb984"
+  },
+  "index.html": {
+    "mtime": 1784645275.1920056,
+    "ast_hash": "ccf5b53599b2d2dc9e639add9f5b67a9",
+    "semantic_hash": "ccf5b53599b2d2dc9e639add9f5b67a9"
+  },
+  "pipeline/generator.html": {
+    "mtime": 1783899338.0764728,
+    "ast_hash": "61252a879650e0afab1bf4f572efb626",
+    "semantic_hash": "61252a879650e0afab1bf4f572efb626"
+  },
+  "resources/GUIA_CORRELACION_BOM_GLB.md": {
+    "mtime": 1784685341.0408394,
+    "ast_hash": "9692b310f6c2495be420d1545a2bdfe2",
+    "semantic_hash": "9692b310f6c2495be420d1545a2bdfe2"
+  },
+  "resources/Guia_Vinculacion_STEP_GLB_EXCEL.md": {
+    "mtime": 1784644071.3210726,
+    "ast_hash": "3822ae3393d7fd8c80d3cbcaacfe7c9d",
+    "semantic_hash": "3822ae3393d7fd8c80d3cbcaacfe7c9d"
+  },
+  "resources/pdf/T2S54FAM101182T19.5.pdf": {
+    "mtime": 1784409889.666327,
+    "ast_hash": "1c1114f77a0775b3f01486c38b9cac8f",
+    "semantic_hash": "1c1114f77a0775b3f01486c38b9cac8f"
+  },
+  "resources/svg/ER5215-301.pdf": {
+    "mtime": 1784133314.2029183,
+    "ast_hash": "fe4b97f53be46498025c543d612dc3f1",
+    "semantic_hash": "fe4b97f53be46498025c543d612dc3f1"
+  },
+  "images/logo.png": {
+    "mtime": 1783473180.1726391,
+    "ast_hash": "01fd890156af060af3719ef68ef43e1a",
+    "semantic_hash": "01fd890156af060af3719ef68ef43e1a"
+  },
+  "resources/images/ER5215-301.png": {
+    "mtime": 1783539833.672403,
+    "ast_hash": "6cb654d16886fab6144fcbe871b38268",
+    "semantic_hash": "6cb654d16886fab6144fcbe871b38268"
+  },
+  "resources/svg/ER5215-301.svg": {
+    "mtime": 1783984249.5512772,
+    "ast_hash": "5b4a24f0ac29747fd3aa7fccdbfb4250",
+    "semantic_hash": "5b4a24f0ac29747fd3aa7fccdbfb4250"
+  },
+  "resources/svg/ER5215-301_files/ba9ed78fc0e50eb6_image_0.jpg": {
+    "mtime": 1783538523.422517,
+    "ast_hash": "01fd890156af060af3719ef68ef43e1a",
+    "semantic_hash": "01fd890156af060af3719ef68ef43e1a"
+  }
+}
