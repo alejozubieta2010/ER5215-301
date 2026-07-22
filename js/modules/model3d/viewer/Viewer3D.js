@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { TrackballControls } from "three/examples/jsm/controls/TrackballControls.js";
 import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader.js";
 import { ReferenceIndex3D } from "./ReferenceIndex3D.js";
 import { ModelIndex3D } from "./ModelIndex3D.js";
@@ -68,11 +68,15 @@ export class Viewer3D {
 
         this.container.appendChild(this.renderer.domElement);
 
-        this.controls = new OrbitControls(this.camera, this.renderer.domElement);
+        this.controls = new TrackballControls(this.camera, this.renderer.domElement);
         this.controls.enableDamping = true;
         this.controls.dampingFactor = 0.25;
-        this.controls.minPolarAngle = 0;
-        this.controls.maxPolarAngle = Math.PI * 2;
+        this.controls.rotateSpeed = 5.0;
+        this.controls.zoomSpeed = 1.2;
+        this.controls.panSpeed = 0.8;
+        this.controls.noRotate = false;
+        this.controls.noZoom = false;
+        this.controls.noPan = false;
         this.controls.update();
 
         this.referenceIndex = new ReferenceIndex3D();
@@ -116,8 +120,6 @@ export class Viewer3D {
         const modelPath = path || this.modelPath;
 
         this.referenceIndex.buildFromComponents(this.bomData);
-
-        await this.loadOverrides();
 
         this.modelRoot = await this.glbLoader.load(modelPath);
 
@@ -204,18 +206,6 @@ export class Viewer3D {
     }
 
 
-
-    async loadOverrides() {
-        try {
-            const response = await fetch('data/mesh-overrides.json');
-            if (response.ok) {
-                const overrides = await response.json();
-                this.referenceIndex.loadOverrides(overrides);
-            }
-        } catch (e) {
-            console.warn("Failed to load mesh overrides:", e);
-        }
-    }
 
     fitCameraToModel() {
         if (!this.modelRoot) return;

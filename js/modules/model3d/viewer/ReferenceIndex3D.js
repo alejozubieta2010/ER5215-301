@@ -2,7 +2,6 @@ export class ReferenceIndex3D {
 
     constructor() {
         this.bomLookup = new Set();
-        this.overrideMap = new Map();
         this.references = new Map();
         this.nameToReference = new Map();
     }
@@ -16,130 +15,56 @@ export class ReferenceIndex3D {
         }
     }
 
-    loadOverrides(overrides) {
-        this.overrideMap.clear();
-        if (overrides && overrides.mappings) {
-            for (const [key, value] of Object.entries(overrides.mappings)) {
-                this.overrideMap.set(key, value);
-            }
-        }
-    }
-
     build(root) {
         this.references.clear();
         this.nameToReference.clear();
-        this.buildRecursive(root, null, false);
+        this.buildRecursive(root, null);
+        console.log("✔ ReferenceIndex3D:", this.references.size, "components tagged,", [...this.references.values()].reduce((a, s) => a + s.size, 0), "meshes");
     }
 
-    buildRecursive(node, inheritedRef, inBomAssembly) {
+    buildRecursive(node, inheritedRef) {
         let currentRef = inheritedRef;
-        let inAssembly = inBomAssembly;
 
-        const name = node.name;
-        if (name) {
-            const overrideRef = this.overrideMap.get(name);
-            if (overrideRef && this.bomLookup.has(overrideRef)) {
-                currentRef = overrideRef;
-                inAssembly = true;
-            } else if (inAssembly) {
-                const resolvedRef = this.extractReference(name);
-                if (resolvedRef) {
-                    currentRef = resolvedRef;
-                }
+        if (node.name) {
+            const pn = node.name.replace(/\.?stp$/i, '').trim();
+            if (this.bomLookup.has(pn)) {
+                currentRef = pn;
             }
         }
 
-        if (node.isMesh && currentRef && inAssembly) {
+        if (node.isMesh && currentRef) {
             node.userData.reference = currentRef;
-            this.nameToReference.set(name, currentRef);
+            if (node.name) {
+                this.nameToReference.set(node.name, currentRef);
+            }
             if (!this.references.has(currentRef)) {
                 this.references.set(currentRef, new Set());
             }
-            this.references.get(currentRef).add(name);
+            this.references.get(currentRef).add(node.name);
         }
 
         if (node.children) {
             for (const child of node.children) {
-                this.buildRecursive(child, currentRef, inAssembly);
+                this.buildRecursive(child, currentRef);
             }
         }
     }
 
     extractReference(name) {
         if (!name) return null;
-
-        let current = name;
-
-        const override1 = this.overrideMap.get(current);
-        if (override1 && this.bomLookup.has(override1)) {
-            return override1;
-        }
-        if (this.bomLookup.has(current)) {
-            return current;
-        }
-
-        const stripped1 = current.replace(/:\d+$/, '');
-        if (stripped1 !== current) {
-            current = stripped1;
-            const ov1 = this.overrideMap.get(current);
-            if (ov1 && this.bomLookup.has(ov1)) {
-                return ov1;
-            }
-            if (this.bomLookup.has(current)) {
-                return current;
-            }
-        }
-
-        const stripped2 = current.replace(/stp\d*/, '');
-        if (stripped2 !== current) {
-            current = stripped2;
-            const ov2 = this.overrideMap.get(current);
-            if (ov2 && this.bomLookup.has(ov2)) {
-                return ov2;
-            }
-            if (this.bomLookup.has(current)) {
-                return current;
-            }
-        }
-
-        const stripped3 = current.replace(/[_-]\d+$/, '');
-        if (stripped3 !== current) {
-            current = stripped3;
-            const ov3 = this.overrideMap.get(current);
-            if (ov3 && this.bomLookup.has(ov3)) {
-                return ov3;
-            }
-            if (this.bomLookup.has(current)) {
-                return current;
-            }
-        }
-
+        const pn = name.replace(/\.?stp$/i, '').trim();
+        if (this.bomLookup.has(pn)) return pn;
         return null;
     }
 
-    extractBaseRef(name) {
-        if (!name) return null;
-
-        let current = name;
-        current = current.replace(/:\d+$/, '');
-        current = current.replace(/stp\d*/, '');
-
-        return current;
-    }
-
     getReferences(bomId) {
-
         return this.references.get(bomId) || new Set();
-
     }
-
-
 
     getAllReferences() {
-
         return [...this.references.keys()];
-
     }
+
     getMeshesByReferences(references, root) {
         const meshSet = new Set(references);
         const result = [];
