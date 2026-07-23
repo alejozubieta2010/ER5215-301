@@ -273,6 +273,10 @@ export class Viewer3D {
                 this.controls.target.copy(this.homeTarget);
                 this.controls.rotateSpeed = 2.0;
                 this.controls.dampingFactor = 0.85;
+                this.controls.zoomSpeed = 1.2;
+                this.controls.panSpeed = 0.8;
+                this.controls.minZoom = 0.3;
+                this.controls.maxZoom = 10;
                 this.controls.enabled = true;
                 this.camera.quaternion.copy(this.homeQuaternion);
 
